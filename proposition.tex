@@ -1,0 +1,134 @@
+\documentclass[fleqn]{article}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{geometry}
+\usepackage{enumerate}% item
+\newcounter{proposition}
+\newcounter{proof}
+\newtheorem{mypro}[proposition]{Proposition}
+\theoremstyle{definition} \newtheorem*{myproof}{Proof}
+\geometry{left=3.18cm, right=3.18cm, top=2.54cm, bottom=2.54cm}%页边距
+\begin{document}
+\begin{mypro}\label{thm:light}
+    Transfer passenger equilibrium assignment will degenerate to equal assignment 
+    when buses trajectories are uniform in time-space diagram and they are not full-loaded. 
+\end{mypro}
+\begin{myproof}
+    We assume bus $m$ is the following bus of line $r$ that arrives at the first common stop $n_{1}$ 
+    after its preceding bus of line $r'$ denoted as $m^{r'}(m,n_{1})$.
+    % (i.e. $\frac{\bar{B}_{m,n}}{B_{m,n}}=1,\forall m\in \mathcal{M}^{1}\cup \mathcal{M}^{2};n\in S^{1}\cup S^{2}$), 
+    As all buses are not full-loaded, the transfer cost function via common stop $n_{i}$ to line $r$ for transfer passengers on bus $m^{r'}\left(m,n_{1}\right)$ 
+    degenerates to the headway between bus $m^{r'}\left(m,n_{1}\right)$ and bus $m$.
+    \begin{equation}
+        \omega_{n_i}^{m^{r'}\left(m,n_{1}\right)} = \omega_{n_i}^{m^{r'}\left(m,n_{1}\right),m} 
+        = d_{m,n_{i}}-d_{m^{r'}\left(m,n_{1}\right),n_{i}}
+      \end{equation}
+
+    
+    The depart time of bus $m$ from stop $n_{i}$ is calculated by:
+    \begin{equation}
+        \label{equ:d_com}
+        d_{m,n_{i}} = 
+        \begin{cases}
+            a_{m,n_{1}} + \sum\limits_{k=1}^{i} W_{m,n_{k}} + \sum\limits_{k=1}^{i-1} T_{m,n_{k}} &\text{ if } i=2,...,\left|\mathcal{N}_{com}^{r,r'}\right|\\
+            a_{m,n_{1}}+W_{m,n_{1}} &\text{ if } i=1
+        \end{cases}
+    \end{equation}
+    Therefore, the transfer cost function from bus $m$ to line $r'$ is expressed by:
+    \begin{equation}
+        \omega_{n_i}^{m^{r'}\left(m,n_{1}\right)}=  
+        \begin{cases}
+            a_{m,n_{1}} + \sum\limits_{k=1}^{i} W_{m,n_{k}} + \sum\limits_{k=1}^{i-1} T_{m,n_{k}}-d_{m^{r'}\left(m,n_{1}\right),n_{i}}
+            &\text{ if }i=2,...,\left|\mathcal{N}_{com}^{r,r'}\right|\\
+            a_{m,n_{1}} + W_{m,n_{1}}-d_{m^{r'}\left(m,n_{1}\right),n_{i}}
+            &\text{ if }i=1.
+        \end{cases}
+    \end{equation}    
+    The dwell time of bus $m$ at common stop $n_{i}\in\mathcal{N}_{com}^{r,r'}$ is derived by:
+    \begin{equation}
+        \label{equ:W_com}
+        \begin{split}
+            W_{m,n_{i}} &= \max \left\{W_{m,n_{i}}^{A},\min \left\{W_{m,n_{i}}^{B},\frac{C_{m,n_{i}}}{\beta}\right\}\right\}\\
+            & = \max \left\{W_{m,n_{i}}^{A},W_{m,n_{i}}^{B} \right\}\\
+            & = \max \left\{\frac{A_{m,n_{i}}}{\alpha},W_{m,n_{i}}^{B} \right\}\\
+        \end{split}
+    \end{equation}
+    where % $L_{m^{r,r'}(m,n_{i}),n_{i}}^{r,r'}=0$
+    \begin{equation}
+        \begin{split}
+            W_{m,n_{i}}^{B} &= \frac{\left(a_{m,n_{i}}-d_{m^{r,r'}(m,n_{i}),n_{i}}\right)\cdot \left(\Lambda_{n_{i}}^{r}+\Lambda_{n_{i}}^{r,r'}\right)
+            +L_{m^{r,r'}(m,n_{i}),n_{i}}^{r}}
+            {\beta-\left(\Lambda_{n_{i}}^{r}+\Lambda_{n_{i}}^{r,r'}\right)}\\
+            &= \frac{\Lambda_{n_{i+1}}^{r,r'}\cdot I_{m,n_{i+1}}^{r,r'} + \Lambda_{n_{i+1}}^{r}\cdot I_{m,n_{i+1}}^{r} + 
+            \sum\limits^{m'\in\mathcal{M'}(m-1,m)} P_{m'}^{trans}\cdot\alpha_{m',n_{i+1}}}
+            {\beta-\left(\Lambda_{n_{i}}^{r}+\Lambda_{n_{i}}^{r,r'}\right)}
+        \end{split}
+    \end{equation}
+    and
+    \begin{equation}
+        A_{m,n_{i}} = p_{m,n_{i},n_{i}} + \alpha_{m,n_{i}}\cdot P_{m}^{trans}
+    \end{equation}
+    where $P_{m}^{trans}=\sum\limits_{j\in\mathcal{N}_{down}^{r'}} p_{m,n_{1},j}$ denotes the total number of transfer passengers on bus $m$.
+
+    Denote $\mathcal{M'}(m-1,m) = \{m'|d_{m-1,n_{i+1}}<d_{m',n_{i+1}}<d_{m,n_{i}},m'\in\mathcal{M}^{r'}\}$, and we get:
+    \begin{equation}
+        \begin{split}
+            W_{m,n_{i+1}} &= \max \left\{\frac{A_{m,n_{i+1}}}{\alpha},W_{m,n_{i+1}}^{B} \right\}\\
+            &= \max \left\{W^{A}_{m,n_{i+1}}\left(\alpha_{m,n_{i+1}}\right),
+            W_{m,n_{i+1}}^{B}(\overset{m'\in\mathcal{M'}(m-1,m)}{\left[\alpha_{m',n_{i+1}}\right]}) \right\}\\
+            &=W_{m,n_{i+1}}\left(\alpha_{m,n_{i+1}},\overset{m'\in\mathcal{M'}(m-1,m)}{\left[\alpha_{m',n_{i+1}}\right]}\right)\\
+        \end{split}
+    \end{equation}
+    The difference of cost function of two successive common stops are expressed as:
+    \begin{equation}
+        \begin{split}
+            &\omega_{n_{i+1}}^{m^{r'}\left(m,n_{1}\right)} - \omega_{n_{i}}^{m^{r'}\left(m,n_{1}\right)}\\
+            &=W_{m,n_{i+1}} + T_{m,n_{i}} - \left(T_{m^{r'}(m,n_{1}),n_{i}} + W_{m^{r'}\left(m,n_{1}\right),n_{i+1}}\right) \\
+            &=W_{m,n_{i+1}}-W_{m^{r'}\left(m,n_{1}\right),n_{i+1}}\\
+        \end{split}
+    \end{equation}
+
+    If all common stops are used, the equilibrium conditions are equivalent to:
+    \begin{equation}
+        \begin{cases}
+            \omega_{n_{i}}^{m'} - \omega_{n_{i-1}}^{m'} = 0 & \text{for } i=2,...,\left|\mathcal{N}_{com}^{r,r'}\right|\\
+            0 \leq \alpha_{n_{i}}^{m} \leq 1 &\forall n_{i}\in \mathcal{N}_{com}^{r,r'}\\
+            \sum\limits_{n_{i}\in \mathcal{N}_{com}^{r,r'}} \alpha_{n_{i}}^{m'} = 1
+        \end{cases}
+    \end{equation} 
+
+
+    The transfer time via stop $n_{i}$ is dependent on the proportions of transfer passengers choosing preceding common stops
+    $\alpha_{n_{1}}^{m'},...,\alpha_{n_{i}}^{m'}$:
+    \begin{equation}
+        \begin{split}
+            \omega_{n_i}^{m'}  &= a_{m,n_{i}} + \sum_{k=1}^{i} W_{m,n_{k}} + \sum_{k=1}^{i-1} T_{m,n_{k}}-d_{m',n_{i}} \\
+            &= a_{m,n_{i}} + \sum_{k=1}^{i-1} T_{m,n_{k}}-d_{m',n_{i}} + \\
+            &\sum_{k=1}^{i} \frac{\left(a_{m,n_{k}}-d_{m^{r,r'}(m,n_{k}),n_{k}}\right)\cdot \left(\Lambda_{n_{k}}^{r}+\Lambda_{n_{k}}^{r,r'}\right)
+            +L_{m^{r,r'}(m,n_{k}),n_{k}}^{r}\left(\alpha_{n_k}^{m'}\right)}
+            {b-\left(\Lambda_{n_{k}}^{r}+\Lambda_{n_{k}}^{r,r'}\right)}        
+        \end{split}
+    \end{equation}
+    That is:
+    \begin{equation}
+        \omega_{n_i}^{m'} = f\left(\boldsymbol{\alpha}^{m'}\right)
+    \end{equation}
+    where $\boldsymbol{\alpha}^{m'} = \left[\alpha_{n_{1}}^{m'},...,\alpha_{n_{i}}^{m'},... \right]_{\left|\mathcal{N}_{com}^{r,r'}\right|}$. 
+    
+    If buses trajectories are uniform in time-space diagram, we have that:
+    \begin{equation}
+        \begin{cases}
+            \omega_{n_{i}}^{m'} = \omega_{n_{i-1}}^{m'} & \text{for } i=2,...,\left|\mathcal{N}_{com}^{r,r'}\right|\\
+            \text{Eq. (\ref{equ:d})} & \text{for }i=2,...,\left|\mathcal{N}_{com}^{r,r'}\right|\\
+            \text{Eq. (\ref{equ:d1})} \\
+            \sum\limits_{k=1}^{\left|\mathcal{N}_{com}^{r,r'}\right|} \alpha_{n_{k}}^{m'} = 1
+        \end{cases}
+        \Leftrightarrow
+        \alpha_{n_{i}}^{m'} = \frac{1}{\left|\mathcal{N}_{com}^{r,r'}\right|},\text{for }i=1,...,\left|\mathcal{N}_{com}^{r,r'}\right|
+    \end{equation} 
+    which means transfer passenger equilibrium assignment degenerates to equal assignment. 
+    If passengers are not provided full information about bus operation, 
+    their route choices are based on the historical experience instead of the real-time bus operation. 
+    \end{myproof}
+\end{document}
