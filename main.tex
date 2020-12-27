@@ -89,12 +89,17 @@
 \maketitle
 
 \begin{Abstract}
-Bus bunching problem is a longstanding problem in the public transport operation
+Bus bunching problem is a longstanding problem in public transport operations
 and degrades the efficiency and quality of transit services. 
-The development of an effective scheme to mitigate the adverse impacts induced by the bus bunching problem relies on understanding the bus movement and depicting bus trajectories. Existing methods inadequately address two issues, namely, capacity constraint and passengers travel behavior in multi-line scenarios.
+The development of an effective scheme to mitigate its adverse impacts relies on understanding the bus movement and depicting bus trajectories. 
+Existing methods inadequately address two issues, namely, capacity constraint and passengers travel behavior in multi-line scenarios.
 Thus, this study develops a method that captures passengers' travel behaviors including boarding, alighting, failing to board and transfer, considering capacity constraint, and a corresponding algorithm to determine bus trajectories.
-Meanwhile, a transfer-based equilibrium is proposed to model passengers' transfer behaviors in multi-line scenarios and formulated as a Variational Inequality problem.
-Numerical examples are conducted to examine the effects of passenger transfer behavior and bus capacity constraint on the propagation of bus bunching. It is found that the propagation of bus bunching problem from a disturbed bus line to an undisturbed bus line via the common corridor is enhanced because of the presence of transfer passengers. This implies that \textcolor{red}{motivating passengers }. Meanwhile, using smaller bus capacity vehicles may lead more regular service as bus dwell times are constrained to avoid severe bus bunching.
+Meanwhile, a transfer-based equilibrium is proposed to describe passengers' transfer behaviors in multi-line scenarios and formulated as a Variational Inequality problem.
+Numerical examples are conducted to examine the effects of passenger travel behavior and capacity constraint on the propagation of bus bunching.
+\textcolor{red}{"distributed bus line?","enhance?"}
+It is found that the propagation of bus bunching from a disturbed bus line to an undisturbed bus line via the common corridor is enhanced because of the presence of transfer passengers. 
+This implies that \textcolor{red}{motivating passengers }. 
+Furthermore, sensitivity tests show that using small buses with low capacity could help to restore regular bus services once bus bunching occurs as bus dwell times are constrained to mitigate bus bunching propagation.
 \textcolor{red}{add the smaller bus capacity also in the conclusion section}
 
 \keywords{Bus bunching \and Common line problem \and Public transport \and Capacity constraint \and Passenger transfer.}
@@ -106,29 +111,32 @@ Numerical examples are conducted to examine the effects of passenger transfer be
 \label{intro}
 % Public transport plays an important role in the urban transportation system. 
 In the last decade, more and more attention has been attracted on providing high-quality public transport services with the advocate of sustainable urban mobility.
-However, maintaining a reliable and efficiency bus operation is very challenging and the mismatching between the transit supply and passenger demand is commonly observed in bus operation.
-In fact, bus services in some metropolitan areas are criticized for being inefficient, irregular, and overcrowded.
+However, maintaining a reliable and efficient bus operation is very challenging and the unbalance between the transit supply and passenger demand is commonly observed in public transport operations.
+Indeed, bus services in many metropolitan areas are criticized for being inefficient, irregular, and overcrowded.
 Low-quality bus services frustrate passengers and lead to a reduction in bus modal split rate especially for commuters.
-For example, the number of annual passenger trips of public (electric) bus in Beijing dropped from 4.84 billion (in 2013) to 3.13 billion (in 2019),
-while the number of motor vehicles increased from 5.44 million (in 2013) to 6.365 million (in 2019).
+For example, the number of annual passenger trips of public transport in Beijing dropped from 4.84 billion in 2013 to 3.13 billion in 2019, while the number of motor trips increased from 5.44 million to 6.365 million during the same period.
 \footnote[1]{Data from the \textit{2020 Beijing Transport Developm annual report}}
 % \reversemarginpar \marginnote{\textcolor{red}{1} Maybe find some data/research paper to justify the statement}
 % However, bus bunching is longstanding in bus operation and degrades the reliability and effectiveness of transit service.
-One of the crucial problems in transit operations is the bus bunching problem, which is commonly described as a phenomenon of schedule disruption and headway irregularity in bus operation.
-It concerns both passengers and transit agencies \citep{1964Nwell,1972Osuna,2008Hollander,2016Verbich}.
-From the passengers' perspective, the bus bunching is intuitively observed as the incidental phenomenon that 
-two or more buses arrive at a stop with headways significantly shorter than designed after a longer waiting time than planned coupled with overcrowding.
+One of the crucial problems in public transport operations is the bus bunching problem, which is commonly described as a phenomenon of schedule disruption and headway irregularity in bus operation.
+The problem concerns both passengers and transit agencies \citep{1964Nwell,1972Osuna,2008Hollander,2016Verbich}.
+From the passengers' perspective, the bus bunching problem is intuitively observed as the incidental phenomenon that 
+two or more buses arrive at a stop with headways significantly different than designed. 
+It may lead shorter waiting time for some passengers, while longer waiting time for others. 
+Either way, passengers' travel plan and route choice could be affected. 
 From the operators' perspective, bus bunching degrades the reliability and effectiveness of transit services, which would require the operator to raise the operation cost to maintain the supply level. 
-Nevertheless, the bus bunching is a natural characteristic of bus operation, becuase the bus system suffers inevitable endogenous uncertainties and exogenous random disturbances that leads to uncertain bus travel time and bus delays, and whenever a delay occurs, the delayed bus picks more passengers while its following bus picks less, also enlarges the variability of bus headway. Without countermeasures after bus bunching occurs, a conventional bus operation can hardly recover to the designed schedule or expected headway especially in peak hours when passenger demand and service frequency are both high \citep{1964Nwell,2001Hickman,2009Daganzo}.
+Nevertheless, the bus bunching problem is a natural characteristic of public transport operations. This is because the public transport system suffers inevitable endogenous uncertainties and exogenous random disturbances that leads to uncertain bus travel time and bus delays; and whenever a delay occurs, the delayed bus picks more passengers, while its following bus picks less, enlarging the variability of bus headway. 
+Without countermeasures, once bus bunching occurs, a conventional bus operation can hardly recover to the designed schedule or expected headway especially in peak hours when passenger demand and service frequency are both high \citep{1964Nwell,2001Hickman,2009Daganzo}.
 
-The occurrence of bus bunching is mainly attributed to two factors, one is the uncertain travel time and the other is the fluctuate passenger demands that induce the uncertainties of bus dwell times at stops \citep{2015Fonzone}. Therefore, the resolve of the bus bunching problem requires understanding and modeling both bus movements and passenger behaviors within the bus operation. Although several bus bunching models/bus dynamic formulations/bus trajectory algorithms were proposed in the literature to capture the propagation of bus bunching, most of the existing studies focused on oversimplified scenarios in which some critical issues like passenger transfer behavior and capacity constraint were not well addressed.
+The occurrence of bus bunching is mainly attributed to two factors, one is the uncertain travel time and the other is the fluctuate passenger demands that induce the uncertainties of bus dwell times at stops \citep{2015Fonzone}.
+Accordingly, the resolve of the bus bunching problem requires understanding and modeling both bus movements and passenger behaviors within the bus operation.
+Although several bus bunching models/bus dynamic formulations/bus trajectory algorithms were proposed in the literature, most of the existing studies focused on oversimplified scenarios in which some critical issues like passenger transfer behavior and capacity constraint were not well addressed.
 In what follows, the literature in bus bunching are reviewed, and the research gap is identified.
-
 % \section{Literature review}\label{Literature review}
 In the light of the seminal work about bus bunching of \cite{1964Nwell}, 
 extensive researches on control schemes of encountering bus bunching have been conducted.
 % \subsection{Control schemes to mitigate bus bunching}
-Earlier literature focused on developing static control schemes in plan level, 
+Earlier literature focused on developing static control schemes in the planing level, 
 such as adding slacks to schedules according to so-called static schedule-based holding schemes 
 \citep{1989Abkowitz,2001Eberlein}.% \marginnote{\textcolor{red}{(Newell, 1974)}}[0cm]
 Since the technique of intelligent transport and control system has been developing rapidly from the beginning of this century, various dynamic bus control schemes taking the advantage of real-time information have been proposed.
@@ -139,29 +147,33 @@ Among these dynamic control strategies, holding strategy is the most practical s
 % \marginnote{\textcolor{red}{(Cats et al., 2011)}}[0cm]. 
 The efficiency of dynamic holding strategy has been testified in literature
 \citep{2009Daganzo,2011Xuan,2012ABartholdi,2015Argote-Cabanero}.
-
 A critical shortcoming of holding control is that it results in longer bus dwell times and lower travel speed.
+\textcolor{red}{"tiny bus bunching?"}
 Moreover holding strategies deal the tiny bus bunching well while fails to work in severe schedule disruption.
 Therefore, other novel strategies were proposed to make up for the insufficiency of holding strategies and outperform them in specific conditions. For example, stop-skipping strategy \citep{2003Fu,2005Sun} 
 and substitution strategy \citep{2018Petit,2019Petit} are investigated to recover from severe schedule disruption. Coordinated speed adjustment \citep{2011Daganzo} is based on bus dedicated lane premise to reduce the extra dwell time and maintain an acceptable operating speed.
 % \marginnote{\textcolor{red}{(Daganzo and Pilachowski, 2009, 2011)}}[0cm]
 
-Most of the existing studies focus on investigating bus bunching in a single line scenario to facilitate of formulation and analyses. However, in practice, many urban corridors are served by multiple bus lines. This requires modelling and determining passengers routing behaviors among the multiple bus lines, known as the common line problem \citep{2015Argote-Cabanero}. 
+Most of the existing studies focus on investigating the bus bunching problem in a single line scenario to simplify the formulation and analyses. However, in practice, many urban corridors are served by multiple bus lines. This requires modelling and determining passengers routing behaviors among the multiple bus lines, known as the common line problem \citep{2015Argote-Cabanero}. 
 Only in the recent five years, several researches investigated bus bunching in multi-line scenarios \citep{2015Carlos,2015Argote-Cabanero,2016Sun,2019Petit,2020Seman}. %\marginnote{\textcolor{red}{Sun?}}[0cm]
 
 \textcolor{red}{
 1. in the next sentence, "their work" ??
 2. following the previous sentence, describe the literature 
-3. then summarize again, say, "the above only consider transfer or capacity, and none of these consider two aspect simultaneously"
+3. then summarize again, say, "the above only consider transfer or capacity, and none of these consider two aspects simultaneously"
 }
-For example, Hernández et al. (2015) developed an optimization model for holding strategy on multiline system.
+For example, Hernández et al. (2015) developed an optimization model for holding strategy on multi-line system.
 They considered capacity constraint but ignored transfer behavior. Schmöcker et al. (2016) investigated the effects of common stops on bus bunching with and without overtaking issue. 
 Their results show that the presence of common stops has positive effects when overtaking is possible.
 They focused on the equilibrium queuing behavior but ignored the passenger transfer behavior and the capacity constraint. 
 Petit et al. (2019) developed an optimization model to implement substitution strategy 
 in a multiline system, but assumed that different bus lines were independent of each other for the sake of simplicity. 
 
-Nevertheless, neither of the above works considers bus capacity and passengers' transfer behavior simultaneously. Therefore, this study develops a method to close the research gap. To be more specific, the capacity is incorporated into a set of equations for characterizing passengers' movement, including boarding, alighting, and transfer. To determine the number of transfer passenger, a transfer-based equilibrium is proposed, in the light of the approach-based transit assignment model developed in \citep{2016Sun,2013Long,2014Szeto,2016Jiang}. The transfer-based equilibrium is different from the approach-based transit assignment in the sense that it determines the number of passnegers transferring to a particular bus in a schedule-based transit network. Meanwhile, our method is different from \citep{2016Sun,2017Wu}, since their model focus on the boarding behavior and bus overtaking is allowed, while ours focus on the transfer behaviors and forbits bus overtaking, which is a common practice in the bus system operated in Beijing. \textcolor{red}{need to check}
+Nevertheless, neither of the above works considers bus capacity and passengers' transfer behavior simultaneously. Therefore, this study develops a method to close the research gap. 
+To be more specific, the capacity is incorporated into a set of equations for characterizing passengers' movement, including boarding, alighting, and transfer. 
+To determine the number of transfer passengers, a transfer-based equilibrium is proposed, in the light of the approach-based transit assignment model developed in \citep{2016Sun,2013Long,2014Szeto,2016Jiang}. 
+The transfer-based equilibrium is different from the approach-based transit assignment in the sense that it determines the number of passengers transferring to a particular bus in a schedule-based transit network.
+Meanwhile, our method is different from \citep{2016Sun,2017Wu}, since their model focuses on the boarding behavior and bus overtaking is allowed, while ours focuses on the transfer behaviors and forbits bus overtaking, which is a common practice in the bus system operated in Beijing. \textcolor{red}{need to check, beijing operation. maybe ok}
 
 % \textrm{(Osuna and Newell, 1972; Newell, 1974; Barnett, 1974; Delgado et al., 2009, 2012; Zhao et al., 2016)}.
 % The boarding limit strategy to control bus dwell time
@@ -170,7 +182,7 @@ Nevertheless, neither of the above works considers bus capacity and passengers' 
 % \subsection{Related literature about multi-line systems}
 % but most of them only consider single transit line scenarios. 
 % \subsection{Passenger behavior}
-\textcolor{red}{What's more is not very formal}
+\textcolor{red}{What's more is not very formal, the followng graph could be deleted}
 What's more, except two papers involved distributed passenger boarding behavior when bus overtaking was allowed \citep{2016Sun,2017Wu}
 most of the existing studies on bus bunching and control strategies ignored passenger equilibrium behavior under the control strategies.
 In fact, passenger behaviors affect the propagation of bus bunching and the performance of control strategies.
@@ -179,12 +191,12 @@ and divert some methodologies and concepts such as fail-to-board probability and
 
 To sum up, the main contributions of this study include:
 \begin{enumerate}
-    \item We propose a new bus bunching model considering passenger transfer behavior and capacity constraint simultaneously in a multi-line network.
-    The impacts of transfer behavior and capacity constraint are illustrated based on the proposed model.
-    \item We propose transfer-based equilibrium formulations to simulate the routing results of transfer passengers.
-    The necessity of modeling transfer passenger's routing behavior is examined in numerical experiments and inspires further discussions of control schemes considering the interaction with passenger behaviors.
-    \item We develop algorithms for bus trajectories and transfer routing results with a combination of event-based simulation and MSA iteration. 
-    \item We propose a simulation-based evaluation indicator to evaluate the range of bus bunching in both temporal and spatial dimensions.
+    \item Developing a method for examining the bus bunching problem considering passenger transfer behavior and capacity constraint simultaneously in multi-line scenarios;
+    \item Proposing a transfer-based equilibrium formulation to determine the number of transfer passengers;
+    \item Developing an algorithm that integrates a event-based simulation and method of successive averages 
+     for obtaining bus trajectories and passengers' routing behavior;
+    \item Devising a novel indicator to measure the impact of the bus bunching problem in both temporal and spatial dimensions.
+    \item Conducting numerical experiments to demonstrate the effect of capacity constraint and passengers' transfer behavior on the propagation of bus bunching and the performance of the proposed algorithm.
 \end{enumerate}
 
 The remaining of the paper is organized as follows: 
