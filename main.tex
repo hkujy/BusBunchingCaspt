@@ -190,6 +190,7 @@ Therefore, we focus on the transfer behavior and formulate a transfer-based equi
 and divert some methodologies and concepts such as fail-to-board probability and MSA algorithm in formulating transfer cost function and searching for equilibrium solutions.
 
 To sum up, the main contributions of this study include:
+\textcolor{red}{the last contribution may be weak, but i normally seperate the contribution between, methodology and results}
 \begin{enumerate}
     \item Developing a method for examining the bus bunching problem considering passenger transfer behavior and capacity constraint simultaneously in multi-line scenarios;
     \item Proposing a transfer-based equilibrium formulation to determine the number of transfer passengers;
@@ -747,17 +748,23 @@ Therefore, we modify the actual time arrival at platform by a minimum headway de
 
 \section{Modeling transfer passenger routing}\label{Transfer passenger routing}
 \subsection{Transfer-based equilibrium}\label{equilibrium}
-Formulas about numbers of alighting, onboard and leftover passengers (i.e. Eq.(\ref{equ:A}), Eq.(\ref{equ:p}) and Eq.(\ref{equ:l})) 
-are related to the probabilities for transfer passengers onboard to alight at each stop
-(i.e. $\bar{\rho}_{m,n}, m\in\mathcal{M}^{r}\cup\mathcal{M}^{r'},n\in\mathcal{N}_{com}^{r,r'}$),
-which represent transfer passengers' routing choice among all candidate interchange stops.
+The computation of numbers of alighting, onboard and leftover passengers (i.e. Eq.(\ref{equ:A}), Eq.(\ref{equ:p}) and Eq.(\ref{equ:l})) requires knowing the probabilities of passengers onboard to alight and transfer to another bus at each stop, (i.e. $\bar{\rho}_{m,n}, m\in\mathcal{M}^{r}\cup\mathcal{M}^{r'},n\in\mathcal{N}_{com}^{r,r'}$), which depends on modelling passengers transfer route choice behavior among all candidate stops.  
+In the light of the approach-based equilibrium formulations \textrm{(Long et al., 2013; Szeto et al., 2014; Jiang et al., 2016)}, this study proposes a transfer-based equilibrium among all Type \ref{item:transfer}) passengers on each bus to depict their transfer behavior.
+To illustrate the concept, Fig.\ref{transfer choice network} is plotted.
 
-Therefore, like approach-based equilibrium formulations \textrm{(Long et al., 2013; Szeto et al., 2014; Jiang et al., 2016)}, 
-we formulate a transfer-based equilibrium among all Type \ref{item:transfer}) passengers on each bus to model their transfer behavior.
-The proportion of transfer passengers on bus $m$ 
+\textcolor{red}{
+    1. this study define a transfer approach as xxxx
+    2. the transfer-appraoch proportion, hence, refers to xxxx, and Mathematically defined as
+        also explains equation 36
+    3. based on the definition of transfer appraoch, this tansfer-based equilibrium condition is given by xxx
+       explain equation 37
+    4. Following (liter xxxx), equation 37 can be reformulated as a NCP problem as well as Variational Inequality problem (VI)
+}
+
+We define the proportion of transfer passengers on bus $m$ 
 those transfer to the other line via common stop $n_{i}$ 
 are denoted as $\alpha_{n_{i}}^{m}$. 
-And then, $\bar{\rho}_{m,n_{i}}$ can be written by the approach-probabilities $\alpha_{n_{i}}^{m}$ for all common stop $n_{i}\in\mathcal{N}_{com}^{r,r'}$ as:
+Then, $\bar{\rho}_{m,n_{i}}$ can be written by the approach-probabilities $\alpha_{n_{i}}^{m}$ for all common stop $n_{i}\in\mathcal{N}_{com}^{r,r'}$ as:
 \begin{equation}
     \bar{\rho}_{m,n_{i}} =
     \begin{cases}
@@ -777,6 +784,7 @@ are intuitively demonstrated by the network shown in \textup{Fig.\ref{transfer c
     \caption{Transfer from from upstream stops of line $r'$ to downstream stops of line $r$ via common stops}
     \label{transfer choice network}
 \end{figure}
+
 As the transfer-based equilibrium conditions are:
 \begin{equation}
     \omega_{n_{i}}^{m}
@@ -797,8 +805,9 @@ the transfer-based equilibrium constraints can be represented as follows:
     \end{cases}
 \end{equation}
 
+\textcolor{red}{the above equation can be reformulated as VI problem}
+
 \subsection{Transfer cost function}
-To implement the assignment of transfer passengers, explicit transfer cost function is necessary. 
 Without loss of generality, we assume bus $m$ is the following bus belonging line $r$ that arrives at stop $n_{i}$ 
 after its preceding bus of line $r'$ which is denoted by $m^{r'}(m,n_{i})$ and can be expressed by: 
 \begin{equation}
@@ -812,8 +821,7 @@ Therefore, the arrival sequences of service buses at all common stops are as sam
     m^{r'}\left(m,n_{i}\right)=m^{r'}\left(m,n_{1}\right), \forall n_{i} \in \mathcal{N}_{com}^{r,r'}
 \end{equation} 
 
-Due to the capacity constraint, 
-part of transfer passengers on bus $m^{r'}(m,n_{i})$ may fail to board the following arrival bus $m$
+Due to the capacity constraint, part of transfer passengers on bus $m^{r'}(m,n_{i})$ may fail to board the following arrival bus $m$
 as shown in Fig.\ref{fig:trans in common stop}.
 \begin{figure}[H]
     \centering
@@ -842,7 +850,11 @@ The transfer cost between from bus $m^{r'}(m,n_{i})$ to bus $m$ is derived by th
 \end{equation}
 
 \subsection{MSA}\label{algorithms}
-To assign transfer passengers based on the transfer cost function proposed in \ref{equilibrium}, we design an MSA iteration.
+To solve the VI problem and obtain the number of transfer passengers, this study adopts the method of successive average (MSA) and presented in Figure xxxxx. 
+\textcolor{red}{
+    1. add fig caption for the algorithm figure,
+    2. although there are classic methods for solving VI.(add liter)  Nevertheless. they are not applicable in our case, since the mapping function does not have an explicit functional form, but relies on an event based simulation algorithm given in Figure. Therefore, MSA is adopted. 
+}
   
 \begin{algorithm}[H]
     \caption{MSA for transfer routing results}
@@ -874,7 +886,9 @@ To assign transfer passengers based on the transfer cost function proposed in \r
     \end{algorithmic}
 \end{algorithm}
 
-\subsection{A special realization of equilibrium assignment}
+% \subsection{A special realization of equilibrium assignment}
+\subsection{Property}
+\textcolor{red}{I think we take the special case as the property of the model}
 Based on the formulations of transfer-based equilibrium and transfer cost function, a special realization of equilibrium assignment is noticeable.
 According to the proposed transfer-based equilibrium, the Wardrop's first principle is fulfilled: 
 for all common stops selected as interchange stops, transfer costs from line 1 to line 2 (or form line 2 to line 1) are equal.
@@ -1231,15 +1245,21 @@ The trend indicates that:
       \label{fig:cap ana}
   \end{figure}
 
-\section{Conclusions and further work}\label{conclusions}
+\section{Conclusions}\label{conclusions}
 This study develops a methodology for investigating the bus bunching phenomenon.
-Compared with existing models, the advance of the proposed model is that the capacity constraint and passengers transfer behavior are simultaneously considered in a multi-lane scenario. Meanwhile, the algorithm for obtaining bus trajectories and passengers' transfer flow are developed. 
-Case studies were carried out to examine the effects of capacity constraint and passengers transfer behavior on the propagation of bus bunching. Moreover, three performance indicators, namely, xxxx, are proposed to measure the sensitivity of different parameters on the impacts of the bus bunching. Notably, the results of the experiments show that increasing the transfer passenger flow enhance the propagation of bus bunching phenomenon from a disturbed line to an undisturbed line, implying that motivating passenger behaviors (demand side) have the potential to cooperate with operation tactics (supply side) to alleviate the bus bunching problem.
+Compared with existing models, the advance of the proposed method is that the capacity constraint and passengers transfer behavior are simultaneously considered in a multi-lane scenario. 
+Meanwhile, the algorithm for obtaining bus trajectories and passengers' transfer flow are developed. 
+Case studies were carried out to examine the effects of capacity constraint and passengers transfer behavior on the propagation of bus bunching.
+\textcolor{red}{performance indicator}
+Moreover, three performance indicators, namely, xxxx, are proposed to measure the sensitivity of different parameters on the impacts of the bus bunching.
+\textcolor{red}{enhance?}
+Notably, the results of the experiments show that increasing the transfer passenger flow enhance the propagation of bus bunching phenomenon from a disturbed line to an undisturbed line, implying that motivating passenger behaviors (demand side) have the potential to cooperate with operation tactics (supply side) to alleviate the bus bunching problem.
 
-
-\textcolor{red}{todo, elaborate more, justify, literature, 
+\textcolor{red}{todo, 
+future research direction, why they are important or neccessary 
+elaborate more, justify, literature, 
 also add discussion relate the equilibrium behaviors
- }
+}
 This study opens many research directions, including but not limited to: 
 \begin{enumerate}[1)]
     \item Examining the effect of different combinations of bus service frequencies and offsets; 
