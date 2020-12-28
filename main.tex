@@ -122,15 +122,14 @@ One of the crucial problems in public transport operations is the bus bunching p
 The problem concerns both passengers and transit agencies \citep{1964Nwell,1972Osuna,2008Hollander,2016Verbich}.
 From the passengers' perspective, the bus bunching problem is intuitively observed as the incidental phenomenon that 
 two or more buses arrive at a stop with headways significantly different than designed. 
-It may lead shorter waiting time for some passengers, while longer waiting time for others. 
+It may lead shorter waiting time for some passengers while longer waiting time for others. 
 Either way, passengers' travel plan and route choice could be affected. 
 From the operators' perspective, bus bunching degrades the reliability and effectiveness of transit services, which would require the operator to raise the operation cost to maintain the supply level. 
 Nevertheless, the bus bunching problem is a natural characteristic of public transport operations. This is because the public transport system suffers inevitable endogenous uncertainties and exogenous random disturbances that leads to uncertain bus travel time and bus delays; and whenever a delay occurs, the delayed bus picks more passengers, while its following bus picks less, enlarging the variability of bus headway. 
-Without countermeasures, once bus bunching occurs, a conventional bus operation can hardly recover to the designed schedule or expected headway especially in peak hours when passenger demand and service frequency are both high \citep{1964Nwell,2001Hickman,2009Daganzo}.
-
+Therefore, without countermeasures, once bus bunching occurs, a conventional bus operation can hardly recover to the designed schedule or expected headway especially in peak hours when passenger demand and service frequency are both high \citep{1964Nwell,2001Hickman,2009Daganzo}.
 The occurrence of bus bunching is mainly attributed to two factors, one is the uncertain travel time and the other is the fluctuate passenger demands that induce the uncertainties of bus dwell times at stops \citep{2015Fonzone}.
 Accordingly, the resolve of the bus bunching problem requires understanding and modeling both bus movements and passenger behaviors within the bus operation.
-Although several bus bunching models/bus dynamic formulations/bus trajectory algorithms were proposed in the literature, most of the existing studies focused on oversimplified scenarios in which some critical issues like passenger transfer behavior and capacity constraint were not well addressed.
+Although several models have been proposed in the literature to analyse bus bunching and develop methods to  mitigate its adverse impacts, most of the existing studies focused on oversimplified scenarios in which some critical issues like passenger transfer behavior and capacity constraint were not well addressed.
 In what follows, the literature in bus bunching are reviewed, and the research gap is identified.
 % \section{Literature review}\label{Literature review}
 In the light of the seminal work about bus bunching of \cite{1964Nwell}, 
@@ -161,6 +160,7 @@ Only in the recent five years, several researches investigated bus bunching in m
 1. in the next sentence, "their work" ??
 2. following the previous sentence, describe the literature 
 3. then summarize again, say, "the above only consider transfer or capacity, and none of these consider two aspects simultaneously"
+4. the literature review is not solid, "event simulation, bus motion, performence meaures"
 }
 For example, Hernández et al. (2015) developed an optimization model for holding strategy on multi-line system.
 They considered capacity constraint but ignored transfer behavior. Schmöcker et al. (2016) investigated the effects of common stops on bus bunching with and without overtaking issue. 
@@ -192,7 +192,7 @@ and divert some methodologies and concepts such as fail-to-board probability and
 To sum up, the main contributions of this study include:
 \textcolor{red}{the last contribution may be weak, but i normally seperate the contribution between, methodology and results}
 \begin{enumerate}
-    \item Developing a method for examining the bus bunching problem considering passenger transfer behavior and capacity constraint simultaneously in multi-line scenarios;
+    \item Developing a method for analysing the bus bunching problem considering passenger transfer behavior and capacity constraint simultaneously in multi-line scenarios;
     \item Proposing a transfer-based equilibrium formulation to determine the number of transfer passengers;
     \item Developing an algorithm that integrates a event-based simulation and method of successive averages 
      for obtaining bus trajectories and passengers' routing behavior;
@@ -200,26 +200,22 @@ To sum up, the main contributions of this study include:
     \item Conducting numerical experiments to demonstrate the effect of capacity constraint and passengers' transfer behavior on the propagation of bus bunching and the performance of the proposed algorithm.
 \end{enumerate}
 
+\textcolor{red}{remark: the literature on "event-based" simulation may be reviewed}
 The remaining of the paper is organized as follows: 
 % \reversemarginpar \marginnote{\textcolor{red}{1}We could add a short summary on the contribution of this summary on the contribution of this study before this paragraph}[-2cm]
 % in Section \ref{Literature review}, we review the literature in three aspects: 
 % control schemes to mitigate bus bunching, bus bunching in multi-line systems and transit passenger assignment.
 % The research gap is identified.
-Section \ref{Problem description} describes the problem we focused on and illustrates basic assumptions and notations. 
+Section \ref{Problem description} describes the problem, lists the assumptions and notations used throughout this study. 
 % \marginnote{\textcolor{red}{2} Maybe divide section 2 into three sections.
 % Section 2: Problem description
 % Section 3: boarding/alighting + algorithm 1
 % Section 4: passengers route choice behavior + MSA algorithm need time to think}[0cm]
-Section \ref{Bus movement} proposes the formulation of bus dwell time which takes in to account passenger behaviors and capacity constraint.
-Then, we develop the algorithm for bus trajectories in an event-based simulation framework. 
-Section \ref{Transfer passenger routing} proposes the formulations of transfer-based equilibrium and transfer cost function.
-Furthermore, MSA iteration algorithm and a special realization of the transfer-based equilibrium are illustrated.
-Section \ref{example} illustrates the specifications by a small example 
-and show the properties of this model 
-by demonstrating the effects of transfer behavior and capacity constraint.
-Section \ref{Evaluation and sensitivity analyses} conducts experiments to analyse the sensitivity of the bus bunching problem 
-to different transfer parameters and capacity settings. 
-Finally, Section \ref{conclusions} gives the conclusions and points out future directions.
+Section \ref{Bus movement} presents the formulation of the bus motion model which takes in to account passenger behaviors and capacity constraint and the corresponding algorithm for obtaining bus trajectories. 
+Section \ref{Transfer passenger routing} develops a transfer-based equilibrium model for modelling passengers transfer behavior, discusses the property of the model, and proposes an MSA type algorithm to solve it.
+Section \ref{PM} proposes three indicators to quantitatively measure the impacts of the bus bunching.
+Section \ref{example} conducts numerical experiments to illustrate the significance of considering passengers transfer behavior and capacity constraints to the bus bunching problem and the sensitivity of the different parameters used in the model.
+Finally, Section \ref{conclusions} provides conclusion and identifies future research directions.
 
 
 \section{Problem description}\label{Problem description}
@@ -390,10 +386,10 @@ The following key notations are used throughout this paper.\newpage
 \end{tabular}
 \end{table}
 
-\section{Modeling bus movement}\label{Bus movement}
-Bus travel time can be broadly decomposed into the time running in roads and dwelling at stops. 
+\section{Bus motion model}\label{Bus movement}
+In general, bus movement can be decomposed into two parts, one is running on the road and the other is dwelling at stops. Correspondingly, bus travel time includes running time and dwelling time.
 Based on assumption A\ref{A: T}, the main source that affects bus travel time considered in this study is the dwell time, which is determined by the number of boarding and alighting passengers. 
-Therefore, this subsection starts with formulating the number of boarding and alighting passengers considering routing behavior and capacity constraint. Afterwards, the bus dwell time is computed and the algorithm for finding bus trajectories is depicted.
+Therefore, this subsection starts with formulating the number of boarding and alighting passengers considering routing behavior and capacity constraints. Afterwards, the bus dwell time is computed and the algorithm for finding bus trajectories is depicted.
 
 \subsection{Boarding demand}\label{B}
 First, we identify the boarding demands of passengers at common stops.
@@ -746,7 +742,7 @@ Therefore, we modify the actual time arrival at platform by a minimum headway de
         n\in \mathcal{S}^{1}\cup\mathcal{S}^{2}
 \end{equation}
 
-\section{Modeling transfer passenger routing}\label{Transfer passenger routing}
+\section{Passengers transfer behavior}\label{Transfer passenger routing}
 \subsection{Transfer-based equilibrium}\label{equilibrium}
 The computation of numbers of alighting, onboard and leftover passengers (i.e. Eq.(\ref{equ:A}), Eq.(\ref{equ:p}) and Eq.(\ref{equ:l})) requires knowing the probabilities of passengers onboard to alight and transfer to another bus at each stop, (i.e. $\bar{\rho}_{m,n}, m\in\mathcal{M}^{r}\cup\mathcal{M}^{r'},n\in\mathcal{N}_{com}^{r,r'}$), which depends on modelling passengers transfer route choice behavior among all candidate stops.  
 In the light of the approach-based equilibrium formulations \textrm{(Long et al., 2013; Szeto et al., 2014; Jiang et al., 2016)}, this study proposes a transfer-based equilibrium among all Type \ref{item:transfer}) passengers on each bus to depict their transfer behavior.
@@ -900,7 +896,81 @@ The explicit statement is concluded in Proposition \ref{pro:equal assignment} an
 \noindent \textbf{Proof} See Appendix.$\hfill\square$ 
 % \marginnote{\textcolor{red}{1}Proposition can be put in the model section}[0cm]
 
-\section{Small network example}\label{example}
+\section{Performance measures} \label{PM}
+In this section, a set of evaluation indices are introduced to quantify the performance of bus operation affected by bus bunching and various sensitivity tests are carried to examine the performance of the model. 
+\subsection{Range of evaluation}
+\textcolor{red}{the title is confusing, there is no logic in the following sentence, 
+also I am not quite clear the purpose of this paragraph}
+As we trigger bus bunching by an initial disturbance, 
+we focus on evaluating the operation of affected buses instead of the overall system.
+For the example shown in Fig.\ref{fig:disturbed MSA trajectories}, Fig.\ref{fig:disturbed MSA alpha up} and Fig.\ref{fig:disturbed MSA alpha down}, 
+we put a 2 min delay to the $51^{st}$ bus of line 1 (red line), 
+and then, 56 bus arrivals or departures deviate from the undisturbed trajectories
+% (exceeding the 1 s threshold value we set). 
+as shown in Fig.\ref{fig:range}. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{CASPT2021paper_fig/range.png}
+    \caption{A disturbance occurs to the $51^{st}$ bus of line 1 (red line) from stop 1 to stop 2 and subsequent buses and downstream stops are affected}
+    \label{fig:range}
+\end{figure}
+The numbers of affected buses at stops reveal the temporal and spatial distribution of the effect of bus bunching.
+As shown in Fig.\ref{fig:heatmap MSA and equal}, bus bunching problem is heavier in the downstream of the bus line and transfer passengers' routing based on real-time bus operation information makes bus bunching maintain longer time comparing with 
+transfer passengers' routing based on historical or expected bus operation.
+To facilitate the calculation of evaluation indices introduced following, 
+we introduce a binary variable: 
+\begin{equation}
+    \begin{split}
+        &x_{m,n}=
+        \begin{cases}
+            1&\text{ if the dwelling of bus } m \text{ at stop } n \text{ is affected;}\\
+            0&\text{ otherwise.}
+        \end{cases}\\
+        &\forall m \in \mathcal{M}^{1}\cup\mathcal{M}^{2}; n \in \mathcal{S}^{1}\cup\mathcal{S}^{2}        
+    \end{split}
+\end{equation}
+\subsection{Evaluation measurements}
+We adopt two evaluation indexes: 
+the average waiting time at stops and the standard deviation of bus time headway, which are commonly used 
+as evaluation measurements and optimization objectives in related literature (i.e. Delgado et al., 2012; Hernández et al. 2015; Liang et al., 2016; Schmöcker et al., 2016; Wu et al., 2017).
+The passengers waiting for bus $m$ of line $r$ at common stop $n$ can be divided into four groups:
+\begin{enumerate}[1)]
+    \item The passengers arrived after the departure of bus $m-1$ who take only line $r$.
+    \item The passengers arrived before the departure of bus $m-1$ who take only line $r$.
+    \item The passengers arrived after the departure of bus $m^{r,r'}(m,n)$ who take both line $r$ and line $r'$.
+    \item The passengers arrived before the departure of bus $m^{r,r'}(m,n)$ who take both line $r$ and line $r'$.
+\end{enumerate} 
+
+Based on the constant arrival rates assumption in A2), 
+the total waiting time of the four groups of passengers for bus $m$ of line $r$ can be estimated 
+as $\frac{h_{m,n}^{r}}{2},h_{m,n}^{r},\frac{h_{m,n}^{r,r'}}{2}$ and $h_{m,n}^{r,r'}$ respectively. 
+The total waiting time for bus $m$ of line $r$ at stop $n$ can be derived as: 
+\begin{equation}
+    w_{m,n}^{r} = \frac{1}{2}\Lambda_{n}^{r}\cdot {h_{m,n}^{r}}^{2} + \frac{1}{2}\Lambda_{n}^{r,r'}\cdot {h_{m,n}^{r,r'}}^{2}
+    + L_{m-1,n}^{r} \cdot h_{m,n}^{r} + L_{m-1,n}^{r} \cdot h_{m,n}^{r}
+\end{equation}
+The average waiting time of passengers in study range can be calculated by: 
+\begin{equation}
+    \bar{w} = \frac{\sum\limits_{n\in \mathcal{S}^{1}\cup\mathcal{S}^{2}}\sum\limits_{m\in \mathcal{M}^{1}\cup\mathcal{M}^{2}} x_{m,n}\cdot w_{m,n}^{r}}
+    {\sum\limits_{n\in \mathcal{S}^{1}\cup \mathcal{S}^{2}} \sum\limits_{m\in \mathcal{M}^{1}\cup \mathcal{M}^{2}}x_{m,n}\cdot \bar{B}_{m,n}}
+\end{equation}
+
+Similarly, the average waiting time of a single line $r$ can be calculated by:
+\begin{equation}
+    \bar{w}^{r} = \frac{\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}\cdot w_{m,n}^{r}}
+    {\sum\limits_{n\in \mathcal{S}^{r}} \sum\limits_{m\in \mathcal{M}^{r}}x_{m,n}\cdot \bar{B}_{m,n}}
+\end{equation}
+
+The standard deviation of the time headway of affected buses of line $r$ is calculated by 
+\begin{equation}
+    \sigma^{r} = \sqrt{\frac{\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}\cdot \left(h_{m,n}^{r}-\bar{h}^{r}\right)^{2}}
+    {\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}}}
+\end{equation}
+where $\bar{h}^{r}=\frac{\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}\cdot h_{m,n}^{r}}
+{\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}}$ 
+denotes the mean headway of line $r$ among affected buses.
+
+\section{Numerical results and sensitivity analysis}\label{example}
 To demonstrate the properties of the model, in this section, we use a small two-line transit network as an example to examine the effects of transfer behavior and capacity constraint on bus bunching. 
 
 % \subsection{System specifications}\label{example specifications}
@@ -1076,81 +1146,9 @@ and limits the bus dwell time at stops when a bus encounters a large boarding de
   \label{fig:two cap}
 \end{figure}
 % \newpage
-\section{Performance evaluation and sensitivity analyses}\label{Evaluation and sensitivity analyses}
-In this section, a set of evaluation indices are introduced to quantify the performance of bus operation affected by bus bunching and various sensitivity tests are carried to examine the performance of the model. 
-\subsection{Range of evaluation}
-\textcolor{red}{the title is confusing, there is no logic in the following sentence, 
-also I am not quite clear the purpose of this paragraph}
-As we trigger bus bunching by an initial disturbance, 
-we focus on evaluating the operation of affected buses instead of the overall system.
-For the example shown in Fig.\ref{fig:disturbed MSA trajectories}, Fig.\ref{fig:disturbed MSA alpha up} and Fig.\ref{fig:disturbed MSA alpha down}, 
-we put a 2 min delay to the $51^{st}$ bus of line 1 (red line), 
-and then, 56 bus arrivals or departures deviate from the undisturbed trajectories
-% (exceeding the 1 s threshold value we set). 
-as shown in Fig.\ref{fig:range}. 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{CASPT2021paper_fig/range.png}
-    \caption{A disturbance occurs to the $51^{st}$ bus of line 1 (red line) from stop 1 to stop 2 and subsequent buses and downstream stops are affected}
-    \label{fig:range}
-\end{figure}
-The numbers of affected buses at stops reveal the temporal and spatial distribution of the effect of bus bunching.
-As shown in Fig.\ref{fig:heatmap MSA and equal}, bus bunching problem is heavier in the downstream of the bus line and transfer passengers' routing based on real-time bus operation information makes bus bunching maintain longer time comparing with 
-transfer passengers' routing based on historical or expected bus operation.
-To facilitate the calculation of evaluation indices introduced following, 
-we introduce a binary variable: 
-\begin{equation}
-    \begin{split}
-        &x_{m,n}=
-        \begin{cases}
-            1&\text{ if the dwelling of bus } m \text{ at stop } n \text{ is affected;}\\
-            0&\text{ otherwise.}
-        \end{cases}\\
-        &\forall m \in \mathcal{M}^{1}\cup\mathcal{M}^{2}; n \in \mathcal{S}^{1}\cup\mathcal{S}^{2}        
-    \end{split}
-\end{equation}
-\subsection{Evaluation measurements}
-We adopt two evaluation indexes: 
-the average waiting time at stops and the standard deviation of bus time headway, which are commonly used 
-as evaluation measurements and optimization objectives in related literature (i.e. Delgado et al., 2012; Hernández et al. 2015; Liang et al., 2016; Schmöcker et al., 2016; Wu et al., 2017).
+% \section{Performance evaluation and sensitivity analyses}\label{Evaluation and sensitivity analyses}
 
-The passengers waiting for bus $m$ of line $r$ at common stop $n$ can be divided into four groups:
-\begin{enumerate}[1)]
-    \item The passengers arrived after the departure of bus $m-1$ who take only line $r$.
-    \item The passengers arrived before the departure of bus $m-1$ who take only line $r$.
-    \item The passengers arrived after the departure of bus $m^{r,r'}(m,n)$ who take both line $r$ and line $r'$.
-    \item The passengers arrived before the departure of bus $m^{r,r'}(m,n)$ who take both line $r$ and line $r'$.
-\end{enumerate} 
-
-Based on the constant arrival rates assumption in A2), 
-the total waiting time of the four groups of passengers for bus $m$ of line $r$ can be estimated 
-as $\frac{h_{m,n}^{r}}{2},h_{m,n}^{r},\frac{h_{m,n}^{r,r'}}{2}$ and $h_{m,n}^{r,r'}$ respectively. 
-The total waiting time for bus $m$ of line $r$ at stop $n$ can be derived as: 
-\begin{equation}
-    w_{m,n}^{r} = \frac{1}{2}\Lambda_{n}^{r}\cdot {h_{m,n}^{r}}^{2} + \frac{1}{2}\Lambda_{n}^{r,r'}\cdot {h_{m,n}^{r,r'}}^{2}
-    + L_{m-1,n}^{r} \cdot h_{m,n}^{r} + L_{m-1,n}^{r} \cdot h_{m,n}^{r}
-\end{equation}
-The average waiting time of passengers in study range can be calculated by: 
-\begin{equation}
-    \bar{w} = \frac{\sum\limits_{n\in \mathcal{S}^{1}\cup\mathcal{S}^{2}}\sum\limits_{m\in \mathcal{M}^{1}\cup\mathcal{M}^{2}} x_{m,n}\cdot w_{m,n}^{r}}
-    {\sum\limits_{n\in \mathcal{S}^{1}\cup \mathcal{S}^{2}} \sum\limits_{m\in \mathcal{M}^{1}\cup \mathcal{M}^{2}}x_{m,n}\cdot \bar{B}_{m,n}}
-\end{equation}
-
-Similarly, the average waiting time of a single line $r$ can be calculated by:
-\begin{equation}
-    \bar{w}^{r} = \frac{\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}\cdot w_{m,n}^{r}}
-    {\sum\limits_{n\in \mathcal{S}^{r}} \sum\limits_{m\in \mathcal{M}^{r}}x_{m,n}\cdot \bar{B}_{m,n}}
-\end{equation}
-
-The standard deviation of the time headway of affected buses of line $r$ is calculated by 
-\begin{equation}
-    \sigma^{r} = \sqrt{\frac{\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}\cdot \left(h_{m,n}^{r}-\bar{h}^{r}\right)^{2}}
-    {\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}}}
-\end{equation}
-where $\bar{h}^{r}=\frac{\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}\cdot h_{m,n}^{r}}
-{\sum\limits_{n\in \mathcal{S}^{r}}\sum\limits_{m\in \mathcal{M}^{r}} x_{m,n}}$ 
-denotes the mean headway of line $r$ among affected buses.
-
+% \subsection{Sensitivity analysis}\label{sensitivity}
 \subsection{Sensitivity analysis}\label{sensitivity}
 Sensitive analysis is carried out to demonstrate the impacts of bus capacity and transfer flows on the bus bunching.
 Considering a busy system with high demands and high-frequency services, 
