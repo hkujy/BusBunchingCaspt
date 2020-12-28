@@ -382,19 +382,17 @@ The following key notations are used throughout this paper.\newpage
 \end{table}
 
 \section{Bus motion model}\label{Bus movement}
-In general, bus movement can be decomposed into two parts, one is running on the road and the other is dwelling at stops. Correspondingly, bus travel time includes running time and dwelling time.
+In general, bus movement can be decomposed into two parts, one is running on the road and the other is dwelling at stops. Correspondingly, bus travel time consists running time and dwelling time.
 Based on assumption A\ref{A: T}, the main source that affects bus travel time considered in this study is the dwell time, which is determined by the number of boarding and alighting passengers. 
 Therefore, this subsection starts with formulating the number of boarding and alighting passengers considering routing behavior and capacity constraints. Afterwards, the bus dwell time is computed and the algorithm for finding bus trajectories is depicted.
 
 \subsection{Boarding demand}\label{B}
-First, we identify the boarding demands of passengers at common stops.
 Based on A\ref{A: constant supply and demand}) and A\ref{A: OD}), 
 the total arrival rate at stop $n$, denoted as $\Lambda_{n}$ (pas/min), 
 is divided into $\lambda_{n,j}$ 
 according to their destinations $j\in \mathcal{S}^{D}(n)$.
 $\mathcal{S}^{D}\left( n \right)$ denotes the set of all destinations of arriving passengers 
-at stop $n$ can be accessed,
-and then $\Lambda_{n}$ can be obtained by:
+at stop $n$ can be accessed. $\Lambda_{n}$ can be obtained by:
 \begin{equation}
     \label{equ:sumLambda}
     \Lambda_{n} = \sum_{j \in \mathcal{S}^{D}\left( n \right)} \lambda_{n,j} 
@@ -565,15 +563,13 @@ and
 % where $\left(1-\overline{\rho}_{m,n}\right)\cdot p_{m,n,j}$ is corresponding to the passengers 
 % whose destinations belong to the other line but have not made the transfer yet. 
 
-There are two points need to acknowledge in \textup{Eq.(\ref{equ:l}) and Eq.(\ref{equ:p})}:
+There are two points need to remark in \textup{Eq.(\ref{equ:l}) and Eq.(\ref{equ:p})}:
 \begin{enumerate}[1)]
-    \item The proportion of each kind of passengers in the boarding passengers is assumed to
-    be equal to the proportion of this kind of passengers in the accumulated queue passengers in boarding progress. 
+    \item The proportion of each kind of passengers in the boarding passengers is assumed to be equal to the proportion of this kind of passengers in the accumulated queue passengers in boarding progress. 
     In other words, the probabilities of boarding successfully of all passengers involved in a boarding process 
     is equal to the ratio of the number of boarding passengers to the boarding demand (i.e. $\frac{\overline{B}_{m,n}}{B_{m,n}}$ in Eq.(\ref{equ:l}) and Eq.(\ref{equ:p})).
     \item  The concept of \textit{leftover passengers} is different 
-    from that in single-line models where it only refers to passengers failed to board an earlier bus 
-    due to the capacity constraint.
+    from that in single-line models where it only refers to passengers failed to board an earlier bus due to the capacity constraint.
     For example, the leftover passengers at a common stop when bus $m$ of line $r$ departs include all passengers 
     whose candidate set of lines doesn't contain line $r$.
 \end{enumerate}
@@ -604,8 +600,7 @@ the numbers of leftover passengers divided according to their candidate lines ar
 
 % \subsection{Bus dwell time constrained by bus capacity and passenger alighting time}
 \subsection{Bus dwell time}
-Inspired by existing work about single-line model considering bus capcaity constant (i.e. Wu et al., 2017), 
-we derive bus dwell time by formulating the queue clearance time of passenger boarding demand 
+Inspired by Wu et al. (2017)'s work that considers bus capcaity constraint in a single line scenario, we derive bus dwell time by formulating the queue clearance time of passenger boarding demand 
 and constrain it by available capacity on bus and passenger alighting time.
 % \subsubsection{Boarding queue clearance time}
 Based on the assumption of constant passengers' arrivals and boarding rates, 
@@ -627,7 +622,7 @@ and $\beta$ denotes the average boarding rate of passengers.
 In this work, it is assumed that the boarding rate is much larger than 
 passenger arrival rates (i.e. $\beta \gg \Lambda_{n}$ for all stop $n$). 
 
-For the simplicity of formulas, 
+For simplification, 
 we introduce the bus service empty period referring to the period during which there is no bus dwelling at the stop. 
 For example, when the bus service empty period at stop $n$ ended up with the arrival of $m$, 
 the length of the period, denoted by $I_{m,n}^{r,r'}$, is obtained by:
@@ -659,6 +654,21 @@ is the maximum value between the boarding and alighting time:
 \end{equation}
 
 \subsection{Algorithm for bus trajectories}
+\textcolor{red}{why not put the initialization in the algorithm figures
+, add figure index to the algorithm section}
+
+\textcolor{red}{
+Figure xxx presents the algorithm to obtain the bus dwell time as well as the bus trajectories. 
+
+insert the algorithm 
+
+
+Remarks on the above algorithm 
+i) xxx
+ii) xxxx
+
+}
+
 Before conducting the calculations for bus dwell times and bus trajectories,
 some initialization is needed to start the algorithm.
 
@@ -896,7 +906,9 @@ To quantitatively assess the impact of bus bunching, two performance measures ar
 
 \textcolor{red}{
     1. define the equation of the two measures first 
+
     2. then states the meaning of binary, which is deined by .....
+    
     3. discuss the index. e.g. similar index have been used the literature. The difference betwen ours and theirs is the binary. This is because, in this study, we introduce the disturbance and not all the buses will be affected. Also, as will be demonstrated in the examples,  the bus operation can recover to regular services when passengers transfer behaviour and capacity constraints
     }
 
@@ -905,11 +917,7 @@ the average waiting time at stops and the standard deviation of bus time headway
 as evaluation measurements and optimization objectives in related literature (i.e. Delgado et al., 2012; Hernández et al. 2015; Liang et al., 2016; Schmöcker et al., 2016; Wu et al., 2017).
 
 
-
 \subsection{No. of buses affected by the bus bunching}
-
-\textcolor{red}{the title is confusing, there is no logic in the following sentence, 
-also I am not quite clear the purpose of this paragraph}
 As we trigger bus bunching by an initial disturbance, 
 we focus on evaluating the operation of affected buses instead of the overall system.
 For the example shown in Fig.\ref{fig:disturbed MSA trajectories}, Fig.\ref{fig:disturbed MSA alpha up} and Fig.\ref{fig:disturbed MSA alpha down}, 
