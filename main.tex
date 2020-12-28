@@ -90,7 +90,7 @@
 
 \begin{Abstract}
 Bus bunching problem is a longstanding problem in public transport operations
-and degrades the efficiency and quality of transit services. 
+as it degrades the efficiency and quality of transit services. 
 The development of an effective scheme to mitigate its adverse impacts relies on understanding the bus movement and depicting bus trajectories. 
 Existing methods inadequately address two issues, namely, capacity constraint and passengers travel behavior in multi-line scenarios.
 Thus, this study develops a method that captures passengers' travel behaviors including boarding, alighting, failing to board and transfer, considering capacity constraint, and a corresponding algorithm to determine bus trajectories.
@@ -217,7 +217,6 @@ Section \ref{PM} proposes three indicators to quantitatively measure the impacts
 Section \ref{example} conducts numerical experiments to illustrate the significance of considering passengers transfer behavior and capacity constraints to the bus bunching problem and the sensitivity of the different parameters used in the model.
 Finally, Section \ref{conclusions} provides conclusion and identifies future research directions.
 
-
 \section{Problem description}\label{Problem description}
 % \label{sec:1}
 % \noindent
@@ -242,10 +241,6 @@ We consider a transit corridor served by two bus lines. Both the common-line sec
 It is necessary to acknowledge that the routing behavior of Type \ref{item:common}) passengers was investigated 
 in \textrm{Schmöcker et al. (2016)} by a distributed boarding equilibrium with a premise that two buses dwelling at a stop and overtaking are possible.
 In our study, we focus on the transfer behaviors of Type \ref{item:transfer}) passengers, which was not discussed in previous studies on bus bunching.
-
-%TODO: Yu Jiang 
-
-
 \subsection{Assumptions}
 The following assumptions are made to facilitate model development.
 \begin{enumerate}[{A}1)]
@@ -897,8 +892,22 @@ The explicit statement is concluded in Proposition \ref{pro:equal assignment} an
 % \marginnote{\textcolor{red}{1}Proposition can be put in the model section}[0cm]
 
 \section{Performance measures} \label{PM}
-In this section, a set of evaluation indices are introduced to quantify the performance of bus operation affected by bus bunching and various sensitivity tests are carried to examine the performance of the model. 
-\subsection{Range of evaluation}
+To quantitatively assess the impact of bus bunching, two performance measures are devised, namley, the average waiting time at stops and the standard deviation of bus time headway. Mathematically, they are defined as follows. 
+
+\textcolor{red}{
+    1. define the equation of the two measures first 
+    2. then states the meaning of binary, which is deined by .....
+    3. discuss the index. e.g. similar index have been used the literature. The difference betwen ours and theirs is the binary. This is because, in this study, we introduce the disturbance and not all the buses will be affected. Also, as will be demonstrated in the examples,  the bus operation can recover to regular services when passengers transfer behaviour and capacity constraints
+    }
+
+We adopt two evaluation indexes: 
+the average waiting time at stops and the standard deviation of bus time headway, which are commonly used 
+as evaluation measurements and optimization objectives in related literature (i.e. Delgado et al., 2012; Hernández et al. 2015; Liang et al., 2016; Schmöcker et al., 2016; Wu et al., 2017).
+
+
+
+\subsection{No. of buses affected by the bus bunching}
+
 \textcolor{red}{the title is confusing, there is no logic in the following sentence, 
 also I am not quite clear the purpose of this paragraph}
 As we trigger bus bunching by an initial disturbance, 

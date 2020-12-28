@@ -1,0 +1,1330 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.27)  28 DEC 2020 03:28
+entering extended mode
+**c:/GitCodes/BusBunchingCaspt/main.tex
+(c:/GitCodes/BusBunchingCaspt/main.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+(svjour3.cls
+Document Class: svjour3 2007/05/08 v3.2 
+LaTeX document class for Springer journals
+Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo) 
+(Springer-SVJour3)           not found in option list of \documentclass
+(Springer-SVJour3)           - autoactivating "global" style.
+(svglov3.clo
+File: svglov3.clo 2009/12/18 v3.2 style option for standardised journals
+
+SVJour Class option: svglov3.clo for standardised journals
+)
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 151.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 154.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 155.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 156.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
+\logodepth=\dimen102
+\headerboxheight=\dimen103
+\betweenumberspace=\dimen104
+\aftertext=\dimen105
+\headlineindent=\dimen106
+\c@inst=\count79
+\c@auth=\count80
+\instindent=\dimen107
+\authrun=\box26
+\authorrunning=\toks14
+\titrun=\box27
+\titlerunning=\toks15
+\combirun=\box28
+\c@lastpage=\count81
+\rubricwidth=\dimen108
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\spthmsep=\dimen109
+\c@theorem=\count87
+\c@case=\count88
+\c@conjecture=\count89
+\c@corollary=\count90
+\c@definition=\count91
+\c@example=\count92
+\c@exercise=\count93
+\c@lemma=\count94
+\c@note=\count95
+\c@problem=\count96
+\c@property=\count97
+\c@proposition=\count98
+\c@question=\count99
+\c@solution=\count100
+\c@remark=\count101
+\c@figure=\count102
+\c@table=\count103
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\figcapgap=\dimen110
+\tabcapgap=\dimen111
+\figgap=\dimen112
+\bibindent=\dimen113
+\@tempcntc=\count104
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+) (natbib.sty
+Package: natbib 2003/06/06 7.1 (PWD)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 518.
+\c@NAT@ctr=\count106
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
+\UL@box=\box29
+\UL@hyphenbox=\box30
+\UL@skip=\skip45
+\UL@hook=\toks17
+\UL@height=\dimen116
+\UL@pe=\count107
+\UL@pixel=\dimen117
+\ULC@box=\box31
+Package: ulem 2019/11/18
+\ULdepth=\dimen118
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks18
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count108
+\float@exts=\toks19
+\float@box=\box32
+\@float@everytoks=\toks20
+\@floatcapt=\box33
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecell\makecell.sty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen119
+\extrarowheight=\dimen120
+\NC@list=\toks21
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+\rotheadsize=\dimen121
+\c@nlinenum=\count109
+\TeXr@lab=\toks22
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen122
+)) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen123
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count110
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count111
+\leftroot@=\count112
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count113
+\DOTSCASE@=\count114
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen124
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+\macc@depth=\count115
+\c@MaxMatrixCols=\count116
+\dotsspace@=\muskip10
+\c@parentequation=\count117
+\dspbrk@lvl=\count118
+\tag@help=\toks24
+\row@=\count119
+\column@=\count120
+\maxfields@=\count121
+\andhelp@=\toks25
+\eqnshift@=\dimen125
+\alignsep@=\dimen126
+\tagshift@=\dimen127
+\tagwidth@=\dimen128
+\totwidth@=\dimen129
+\lineht@=\dimen130
+\@envbody=\toks26
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks28
+\c@algorithm=\count122
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count123
+\c@ALC@line=\count124
+\c@ALC@rem=\count125
+\c@ALC@depth=\count126
+\ALC@tlm=\skip51
+\algorithmicindent=\skip52
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen131
+\captionmargin@=\dimen132
+\captionwidth=\dimen133
+\caption@tempdima=\dimen134
+\caption@indent=\dimen135
+\caption@parindent=\dimen136
+\caption@hangindent=\dimen137
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\captionstyle \ifx \@captype \fig@type \vskip \figcapgap \fi \setbox \@tempboxa \hbox {{\floatlegendstyle #1\floatcounterend }\capstrut #2}\ifdim \wd \@tempboxa >\hsize {\floatlegendstyle #1\floatcounterend }\capstrut #2\par \else \hbox to\hsize {\leftlegendglue \unhbox \@tempboxa \hfil }\fi \ifx \@captype \fig@type \else \vskip \tabcapgap \fi  on input line 1082.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count127
+\c@continuedfloat=\count128
+Package caption Info: float package is loaded.
+)
+\c@subfigure=\count129
+\c@subtable=\count130
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\marginnote\marginnote.sty"
+Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
+\c@mn@abspage=\count131
+)
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 63.
+("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+Unknown journal: specify \journalname{<name of your journal>} in preambel
+
+("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count132
+\scratchdimen=\dimen138
+\scratchbox=\box36
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen139
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks30
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO)
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+)) ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+SVJour3 warning: Missing \journalname
+SVJour3 warning: Missing \date
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+LaTeX Font Info:    Try loading font information for U+msa on input line 89.
+("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 89.
+ ("C:\Users\phdji\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+SVJour3 Warning: Title too long for running head.
+Please supply a shorter form with \titlerunning prior to \maketitle
+
+c:/GitCodes/BusBunchingCaspt/main.tex:91: LaTeX Error: Environment Abstract undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+c:/GitCodes/BusBunchingCaspt/main.tex:108: LaTeX Error: \begin{document} ended by \end{abstract}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Package natbib Warning: Citation `1964Nwell' on page 1 undefined on input line 122.
+
+
+Package natbib Warning: Citation `1972Osuna' on page 1 undefined on input line 122.
+
+
+Package natbib Warning: Citation `2008Hollander' on page 1 undefined on input line 122.
+
+
+Package natbib Warning: Citation `2016Verbich' on page 1 undefined on input line 122.
+
+
+Package natbib Warning: Citation `1964Nwell' on page 1 undefined on input line 129.
+
+
+Package natbib Warning: Citation `2001Hickman' on page 1 undefined on input line 129.
+
+
+Package natbib Warning: Citation `2009Daganzo' on page 1 undefined on input line 129.
+
+
+Package natbib Warning: Citation `2015Fonzone' on page 1 undefined on input line 130.
+
+
+Package natbib Warning: Citation `1964Nwell' on page 1 undefined on input line 135.
+
+
+Package natbib Warning: Citation `1989Abkowitz' on page 1 undefined on input line 140.
+
+
+Package natbib Warning: Citation `2001Eberlein' on page 1 undefined on input line 140.
+
+
+Package natbib Warning: Citation `2015Ibarra-Rojas' on page 1 undefined on input line 142.
+
+
+Package natbib Warning: Citation `2013Cats' on page 1 undefined on input line 145.
+
+
+Package natbib Warning: Citation `2001Eberlein' on page 1 undefined on input line 145.
+
+
+Package natbib Warning: Citation `2009Daganzo' on page 1 undefined on input line 148.
+
+
+Package natbib Warning: Citation `2011Xuan' on page 1 undefined on input line 148.
+
+
+Package natbib Warning: Citation `2012ABartholdi' on page 1 undefined on input line 148.
+
+
+Package natbib Warning: Citation `2015Argote-Cabanero' on page 1 undefined on input line 148.
+
+
+Package natbib Warning: Citation `2003Fu' on page 1 undefined on input line 152.
+
+
+Package natbib Warning: Citation `2005Sun' on page 1 undefined on input line 152.
+
+
+Package natbib Warning: Citation `2018Petit' on page 1 undefined on input line 153.
+
+
+Package natbib Warning: Citation `2019Petit' on page 1 undefined on input line 153.
+
+
+Package natbib Warning: Citation `2011Daganzo' on page 1 undefined on input line 153.
+
+
+Underfull \vbox (badness 2384) has occurred while \output is active []
+
+ [1{C:/Users/phdji/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[2]
+
+Package natbib Warning: Citation `2015Argote-Cabanero' on page 3 undefined on input line 156.
+
+
+Package natbib Warning: Citation `2015Carlos' on page 3 undefined on input line 157.
+
+
+Package natbib Warning: Citation `2015Argote-Cabanero' on page 3 undefined on input line 157.
+
+
+Package natbib Warning: Citation `2016Sun' on page 3 undefined on input line 157.
+
+
+Package natbib Warning: Citation `2019Petit' on page 3 undefined on input line 157.
+
+
+Package natbib Warning: Citation `2020Seman' on page 3 undefined on input line 157.
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¡ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+
+Package natbib Warning: Citation `2016Sun' on page 3 undefined on input line 174.
+
+
+Package natbib Warning: Citation `2013Long' on page 3 undefined on input line 174.
+
+
+Package natbib Warning: Citation `2014Szeto' on page 3 undefined on input line 174.
+
+
+Package natbib Warning: Citation `2016Jiang' on page 3 undefined on input line 174.
+
+
+Package natbib Warning: Citation `2016Sun' on page 3 undefined on input line 176.
+
+
+Package natbib Warning: Citation `2017Wu' on page 3 undefined on input line 176.
+
+[3]
+
+Package natbib Warning: Citation `2016Sun' on page 4 undefined on input line 186.
+
+
+Package natbib Warning: Citation `2017Wu' on page 4 undefined on input line 186.
+
+
+LaTeX Warning: Reference `Problem description' on page 4 undefined on input line 209.
+
+
+LaTeX Warning: Reference `Bus movement' on page 4 undefined on input line 214.
+
+
+LaTeX Warning: Reference `Transfer passenger routing' on page 4 undefined on input line 215.
+
+
+LaTeX Warning: Reference `PM' on page 4 undefined on input line 216.
+
+
+LaTeX Warning: Reference `example' on page 4 undefined on input line 217.
+
+
+LaTeX Warning: Reference `conclusions' on page 4 undefined on input line 218.
+
+
+LaTeX Warning: Reference `fig:Fig1' on page 4 undefined on input line 226.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[4] <CASPT2021paper_fig/Fig1.png, id=19, 2473.74188pt x 907.89188pt>
+File: CASPT2021paper_fig/Fig1.png Graphic file (type png)
+ <use CASPT2021paper_fig/Fig1.png>
+Package pdftex.def Info: CASPT2021paper_fig/Fig1.png used on input line 237.
+(pdftex.def)             Requested size: 304.19794pt x 111.6437pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 238.
+
+
+LaTeX Warning: Reference `item:common' on page 5 undefined on input line 242.
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+
+LaTeX Warning: Reference `item:transfer' on page 5 undefined on input line 244.
+
+
+LaTeX Warning: Reference `A: avoid transfer' on page 5 undefined on input line 269.
+
+
+LaTeX Warning: Reference `item:transfer' on page 5 undefined on input line 269.
+
+
+LaTeX Warning: Reference `A: FAFD' on page 5 undefined on input line 270.
+
+
+LaTeX Warning: Reference `A: T' on page 5 undefined on input line 272.
+
+
+Package natbib Warning: Citation `2014Muoz' on page 5 undefined on input line 272.
+
+
+Package natbib Warning: Citation `2015Carlos' on page 5 undefined on input line 272.
+
+
+Package natbib Warning: Citation `2016Sun' on page 5 undefined on input line 272.
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¡ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+
+LaTeX Warning: Reference `A: constant supply and demand' on page 5 undefined on input line 273.
+
+
+Package natbib Warning: Citation `2016Sanchez' on page 5 undefined on input line 274.
+
+
+Package natbib Warning: Citation `2016Sun' on page 5 undefined on input line 274.
+
+
+Package natbib Warning: Citation `2017Wu' on page 5 undefined on input line 274.
+
+
+LaTeX Warning: Reference `A: dwell time' on page 5 undefined on input line 275.
+
+
+Package natbib Warning: Citation `2017Wu' on page 5 undefined on input line 275.
+
+
+Package natbib Warning: Citation `2019Li' on page 5 undefined on input line 275.
+
+
+Package natbib Warning: Citation `2020Wang' on page 5 undefined on input line 275.
+
+[5 <./CASPT2021paper_fig/Fig1.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 319--353
+[][]
+ []
+
+[7]
+
+LaTeX Warning: Reference `A: T' on page 8 undefined on input line 391.
+
+
+LaTeX Warning: Reference `A: constant supply and demand' on page 8 undefined on input line 396.
+
+
+LaTeX Warning: Reference `A: OD' on page 8 undefined on input line 396.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[8]
+
+LaTeX Warning: Reference `fig:Fig1' on page 9 undefined on input line 425.
+
+[9]
+
+LaTeX Warning: Reference `P and L' on page 10 undefined on input line 492.
+
+
+LaTeX Warning: Reference `equ:catlambda' on page 10 undefined on input line 494.
+
+
+LaTeX Warning: Reference `equ:totalB' on page 10 undefined on input line 494.
+
+
+LaTeX Warning: Reference `equ:catlambda' on page 10 undefined on input line 498.
+
+
+LaTeX Warning: Reference `equ:headway' on page 10 undefined on input line 498.
+
+
+LaTeX Warning: Reference `equ:totalB' on page 10 undefined on input line 498.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[10]
+
+LaTeX Warning: Reference `equ:A' on page 11 undefined on input line 538.
+
+
+LaTeX Warning: Reference `equilibrium' on page 11 undefined on input line 542.
+
+
+LaTeX Warning: Reference `equ:totalB' on page 11 undefined on input line 545.
+
+
+LaTeX Warning: Reference `equ:singleB' on page 11 undefined on input line 545.
+
+
+LaTeX Warning: Reference `equ:C' on page 11 undefined on input line 545.
+
+
+Overfull \hbox (5.44145pt too wide) detected at line 569
+\OML/cmm/m/it/10 p[] \OT1/cmr/m/n/10 = []
+ []
+
+
+LaTeX Warning: Reference `equ:l' on page 11 undefined on input line 573.
+
+
+LaTeX Warning: Reference `equ:p' on page 11 undefined on input line 573.
+
+
+LaTeX Warning: Reference `equ:l' on page 11 undefined on input line 578.
+
+
+LaTeX Warning: Reference `equ:p' on page 11 undefined on input line 578.
+
+[11]
+
+LaTeX Warning: Reference `equ:B^r' on page 12 undefined on input line 597.
+
+
+LaTeX Warning: Reference `equ:B^rr'' on page 12 undefined on input line 597.
+
+
+LaTeX Warning: Reference `equ:totalB' on page 12 undefined on input line 597.
+
+
+LaTeX Warning: Reference `B' on page 12 undefined on input line 597.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[12]
+
+LaTeX Warning: Reference `A: constant supply and demand' on page 13 undefined on input line 675.
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: 2) on input line 681.
+
+
+LaTeX Warning: Reference `equ:WB' on page 13 undefined on input line 693.
+
+[13]
+
+LaTeX Warning: Reference `algorithm' on page 14 undefined on input line 695.
+
+
+LaTeX Warning: Reference `equ:A' on page 14 undefined on input line 707.
+
+
+LaTeX Warning: Reference `equ:C' on page 14 undefined on input line 709.
+
+
+LaTeX Warning: Reference `equ:WB' on page 14 undefined on input line 710.
+
+
+LaTeX Warning: Reference `equ:W' on page 14 undefined on input line 710.
+
+
+LaTeX Warning: Reference `equ:WA' on page 14 undefined on input line 710.
+
+
+LaTeX Warning: Reference `equ:a' on page 14 undefined on input line 715.
+
+
+LaTeX Warning: Reference `equ:totalB' on page 14 undefined on input line 716.
+
+
+LaTeX Warning: Reference `equ:barB' on page 14 undefined on input line 717.
+
+
+LaTeX Warning: Reference `equ:p' on page 14 undefined on input line 718.
+
+
+LaTeX Warning: Reference `equ:l' on page 14 undefined on input line 719.
+
+
+LaTeX Warning: Reference `A: dwell time' on page 14 undefined on input line 734.
+
+
+LaTeX Warning: Reference `equ:WB' on page 14 undefined on input line 736.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[14]
+
+LaTeX Warning: Reference `equ:A' on page 15 undefined on input line 747.
+
+
+LaTeX Warning: Reference `equ:p' on page 15 undefined on input line 747.
+
+
+LaTeX Warning: Reference `equ:l' on page 15 undefined on input line 747.
+
+
+LaTeX Warning: Reference `item:transfer' on page 15 undefined on input line 748.
+
+
+LaTeX Warning: Reference `transfer choice network' on page 15 undefined on input line 749.
+
+
+LaTeX Warning: Reference `transfer choice network' on page 15 undefined on input line 776.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/transfer choice network.png' not found on input line 779.
+
+<CASPT2021paper_fig/transfer choice network.png, id=71, 856.70062pt x 548.80031pt>
+File: CASPT2021paper_fig/transfer choice network.png Graphic file (type png)
+ <use CASPT2021paper_fig/transfer choice network.png>
+Package pdftex.def Info: CASPT2021paper_fig/transfer choice network.png used on input line 779.
+(pdftex.def)             Requested size: 169.0pt x 108.25916pt.
+
+Underfull \vbox (badness 5893) has occurred while \output is active []
+
+ [15]
+
+LaTeX Warning: Reference `A: T' on page 16 undefined on input line 813.
+
+
+LaTeX Warning: Reference `fig:trans in common stop' on page 16 undefined on input line 821.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/trans in common stop.png' not found on input line 824.
+
+<CASPT2021paper_fig/trans in common stop.png, id=75, 2899.08093pt x 1205.2528pt>
+File: CASPT2021paper_fig/trans in common stop.png Graphic file (type png)
+ <use CASPT2021paper_fig/trans in common stop.png>
+Package pdftex.def Info: CASPT2021paper_fig/trans in common stop.png used on input line 824.
+(pdftex.def)             Requested size: 338.0pt x 140.5046pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[16 <./CASPT2021paper_fig/transfer choice network.png>]
+
+LaTeX Warning: Reference `equ:omega' on page 17 undefined on input line 866.
+
+
+Underfull \vbox (badness 1242) has occurred while \output is active []
+
+ [17 <./CASPT2021paper_fig/trans in common stop.png>]
+
+LaTeX Warning: Reference `pro:equal assignment' on page 18 undefined on input line 892.
+
+
+LaTeX Warning: Reference `subsec: effc of trafer behaviors' on page 18 undefined on input line 892.
+
+
+LaTeX Warning: Reference `fig:disturbed MSA trajectories' on page 18 undefined on input line 906.
+
+
+LaTeX Warning: Reference `fig:disturbed MSA alpha up' on page 18 undefined on input line 906.
+
+
+LaTeX Warning: Reference `fig:disturbed MSA alpha down' on page 18 undefined on input line 906.
+
+
+LaTeX Warning: Reference `fig:range' on page 18 undefined on input line 910.
+
+<CASPT2021paper_fig/range.png, id=83, 3544.99406pt x 1616.28844pt>
+File: CASPT2021paper_fig/range.png Graphic file (type png)
+ <use CASPT2021paper_fig/range.png>
+Package pdftex.def Info: CASPT2021paper_fig/range.png used on input line 913.
+(pdftex.def)             Requested size: 304.19794pt x 138.67747pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[18]
+
+LaTeX Warning: Reference `fig:heatmap MSA and equal' on page 19 undefined on input line 918.
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¡ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+[19 <./CASPT2021paper_fig/range.png>]
+
+LaTeX Warning: Reference `fig:example' on page 20 undefined on input line 977.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[20] <CASPT2021paper_fig/Fig2.png, id=96, 1742.00812pt x 570.63188pt>
+File: CASPT2021paper_fig/Fig2.png Graphic file (type png)
+ <use CASPT2021paper_fig/Fig2.png>
+Package pdftex.def Info: CASPT2021paper_fig/Fig2.png used on input line 1004.
+(pdftex.def)             Requested size: 338.0pt x 110.71115pt.
+
+
+LaTeX Warning: Reference `fig:uniform trajectories' on page 21 undefined on input line 1013.
+
+
+LaTeX Warning: Reference `fig:uniform alpha up' on page 21 undefined on input line 1015.
+
+
+LaTeX Warning: Reference `fig:uniform alpha down' on page 21 undefined on input line 1015.
+
+
+LaTeX Warning: Reference `pro:equal assignment' on page 21 undefined on input line 1017.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/uniform trajectories.png' not found on input line 1022.
+
+<CASPT2021paper_fig/uniform trajectories.png, id=97, 517.935pt x 390.45876pt>
+File: CASPT2021paper_fig/uniform trajectories.png Graphic file (type png)
+ <use CASPT2021paper_fig/uniform trajectories.png>
+Package pdftex.def Info: CASPT2021paper_fig/uniform trajectories.png used on input line 1022.
+(pdftex.def)             Requested size: 152.09897pt x 114.66599pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1022.
+
+Overfull \hbox (32.92583pt too wide) in paragraph at lines 1022--1023
+[]|[]| 
+ []
+
+
+LaTeX Warning: File `CASPT2021paper_fig/uniform alpha of line 1 (short).png' not found on input line 1024.
+
+<CASPT2021paper_fig/uniform alpha of line 1 (short).png, id=98, 549.05125pt x 332.24126pt>
+File: CASPT2021paper_fig/uniform alpha of line 1 (short).png Graphic file (type png)
+ <use CASPT2021paper_fig/uniform alpha of line 1 (short).png>
+Package pdftex.def Info: CASPT2021paper_fig/uniform alpha of line 1 (short).png used on input line 1024.
+(pdftex.def)             Requested size: 135.19794pt x 81.8079pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/uniform alpha of line 2 (short).png' not found on input line 1024.
+
+<CASPT2021paper_fig/uniform alpha of line 2 (short).png, id=99, 549.05125pt x 332.24126pt>
+File: CASPT2021paper_fig/uniform alpha of line 2 (short).png Graphic file (type png)
+ <use CASPT2021paper_fig/uniform alpha of line 2 (short).png>
+Package pdftex.def Info: CASPT2021paper_fig/uniform alpha of line 2 (short).png used on input line 1024.
+(pdftex.def)             Requested size: 135.19794pt x 81.8079pt.
+
+Overfull \hbox (77.23383pt too wide) in paragraph at lines 1021--1026
+ [][] 
+ []
+
+
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
+ [21 <./CASPT2021paper_fig/Fig2.png>]
+
+LaTeX Warning: Reference `fig:uniform alpha up' on page 22 undefined on input line 1034.
+
+
+LaTeX Warning: Reference `fig:uniform alpha down' on page 22 undefined on input line 1034.
+
+
+LaTeX Warning: Reference `fig:disturbed MSA and equal' on page 22 undefined on input line 1040.
+
+
+LaTeX Warning: Reference `fig:heatmap MSA and equal' on page 22 undefined on input line 1041.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[22 <./CASPT2021paper_fig/uniform trajectories.png> <./CASPT2021paper_fig/uniform alpha of line 1 (short).png> <./CASPT2021paper_fig/uniform alpha of line 2 (short).png>]
+
+LaTeX Warning: File `CASPT2021paper_fig/disturbed alpha of line 1 (short).png' not found on input line 1054.
+
+<CASPT2021paper_fig/disturbed alpha of line 1 (short).png, id=110, 549.05125pt x 332.24126pt>
+File: CASPT2021paper_fig/disturbed alpha of line 1 (short).png Graphic file (type png)
+ <use CASPT2021paper_fig/disturbed alpha of line 1 (short).png>
+Package pdftex.def Info: CASPT2021paper_fig/disturbed alpha of line 1 (short).png used on input line 1054.
+(pdftex.def)             Requested size: 135.19794pt x 81.8079pt.
+
+Overfull \hbox (78.25352pt too wide) in paragraph at lines 1054--1055
+[]|[]| 
+ []
+
+
+LaTeX Warning: File `CASPT2021paper_fig/uniform alpha of line 1 (short).png' not found on input line 1056.
+
+File: CASPT2021paper_fig/uniform alpha of line 1 (short).png Graphic file (type png)
+<use CASPT2021paper_fig/uniform alpha of line 1 (short).png>
+Package pdftex.def Info: CASPT2021paper_fig/uniform alpha of line 1 (short).png used on input line 1056.
+(pdftex.def)             Requested size: 135.19794pt x 81.8079pt.
+
+Overfull \hbox (78.25352pt too wide) in paragraph at lines 1056--1056
+[]|[]| 
+ []
+
+
+LaTeX Warning: File `CASPT2021paper_fig/disturbed alpha of line 2 (short).png' not found on input line 1059.
+
+<CASPT2021paper_fig/disturbed alpha of line 2 (short).png, id=111, 549.05125pt x 332.24126pt>
+File: CASPT2021paper_fig/disturbed alpha of line 2 (short).png Graphic file (type png)
+ <use CASPT2021paper_fig/disturbed alpha of line 2 (short).png>
+Package pdftex.def Info: CASPT2021paper_fig/disturbed alpha of line 2 (short).png used on input line 1059.
+(pdftex.def)             Requested size: 135.19794pt x 81.8079pt.
+
+Overfull \hbox (78.25352pt too wide) in paragraph at lines 1059--1060
+[]|[]| 
+ []
+
+
+LaTeX Warning: File `CASPT2021paper_fig/uniform alpha of line 2 (short).png' not found on input line 1061.
+
+File: CASPT2021paper_fig/uniform alpha of line 2 (short).png Graphic file (type png)
+<use CASPT2021paper_fig/uniform alpha of line 2 (short).png>
+Package pdftex.def Info: CASPT2021paper_fig/uniform alpha of line 2 (short).png used on input line 1061.
+(pdftex.def)             Requested size: 135.19794pt x 81.8079pt.
+
+Overfull \hbox (78.25352pt too wide) in paragraph at lines 1061--1061
+[]|[]| 
+ []
+
+
+LaTeX Warning: File `CASPT2021paper_fig/disturbed MSA trajectories.png' not found on input line 1063.
+
+<CASPT2021paper_fig/disturbed MSA trajectories.png, id=112, 517.935pt x 390.45876pt>
+File: CASPT2021paper_fig/disturbed MSA trajectories.png Graphic file (type png)
+ <use CASPT2021paper_fig/disturbed MSA trajectories.png>
+Package pdftex.def Info: CASPT2021paper_fig/disturbed MSA trajectories.png used on input line 1063.
+(pdftex.def)             Requested size: 135.19794pt x 101.92201pt.
+
+Overfull \hbox (63.81339pt too wide) in paragraph at lines 1063--1064
+[]|[]| 
+ []
+
+
+LaTeX Warning: File `CASPT2021paper_fig/disturbed equal trajectories.png' not found on input line 1065.
+
+<CASPT2021paper_fig/disturbed equal trajectories.png, id=113, 517.935pt x 390.45876pt>
+File: CASPT2021paper_fig/disturbed equal trajectories.png Graphic file (type png)
+ <use CASPT2021paper_fig/disturbed equal trajectories.png>
+Package pdftex.def Info: CASPT2021paper_fig/disturbed equal trajectories.png used on input line 1065.
+(pdftex.def)             Requested size: 135.19794pt x 101.92201pt.
+
+Overfull \hbox (63.80537pt too wide) in paragraph at lines 1065--1065
+[]|[]| 
+ []
+
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no š in font ptmr7t!
+
+LaTeX Warning: File `experiments/experiment 1ï¼šaffected bus dwell events of line 1.png' not found on input line 1077.
+
+<experiments/experiment 1ï¼šaffected bus dwell events of line 1.png, id=114, 386.44376pt x 517.935pt>
+File: experiments/experiment 1ï¼šaffected bus dwell events of line 1.png Graphic file (type png)
+ <use experiments/experiment 1ï¼šaffected bus dwell events of line 1.png>
+Package pdftex.def Info: experiments/experiment 1ï¼šaffected bus dwell events of line 1.png used on input line 1077.
+(pdftex.def)             Requested size: 135.19794pt x 181.20093pt.
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no š in font ptmr7t!
+
+
+LaTeX Warning: File `experiments/experiment 2ï¼šaffected bus dwell events of line 1.png' not found on input line 1079.
+
+<experiments/experiment 2ï¼šaffected bus dwell events of line 1.png, id=115, 386.44376pt x 517.935pt>
+File: experiments/experiment 2ï¼šaffected bus dwell events of line 1.png Graphic file (type png)
+ <use experiments/experiment 2ï¼šaffected bus dwell events of line 1.png>
+Package pdftex.def Info: experiments/experiment 2ï¼šaffected bus dwell events of line 1.png used on input line 1079.
+(pdftex.def)             Requested size: 135.19794pt x 181.20093pt.
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no š in font ptmr7t!
+
+
+LaTeX Warning: File `experiments/experiment 1ï¼šaffected bus dwell events of line 2.png' not found on input line 1082.
+
+<experiments/experiment 1ï¼šaffected bus dwell events of line 2.png, id=116, 386.44376pt x 517.935pt>
+File: experiments/experiment 1ï¼šaffected bus dwell events of line 2.png Graphic file (type png)
+ <use experiments/experiment 1ï¼šaffected bus dwell events of line 2.png>
+Package pdftex.def Info: experiments/experiment 1ï¼šaffected bus dwell events of line 2.png used on input line 1082.
+(pdftex.def)             Requested size: 135.19794pt x 181.20093pt.
+Missing character: There is no ï in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no š in font ptmr7t!
+
+
+LaTeX Warning: File `experiments/experiment 2ï¼šaffected bus dwell events of line 2.png' not found on input line 1084.
+
+<experiments/experiment 2ï¼šaffected bus dwell events of line 2.png, id=117, 386.44376pt x 517.935pt>
+File: experiments/experiment 2ï¼šaffected bus dwell events of line 2.png Graphic file (type png)
+ <use experiments/experiment 2ï¼šaffected bus dwell events of line 2.png>
+Package pdftex.def Info: experiments/experiment 2ï¼šaffected bus dwell events of line 2.png used on input line 1084.
+(pdftex.def)             Requested size: 135.19794pt x 181.20093pt.
+
+Overfull \hbox (215.73792pt too wide) in paragraph at lines 1073--1086
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./CASPT2021paper_fig/disturbed alpha of line 1 (short).png> <./CASPT2021paper_fig/disturbed alpha of line 2 (short).png> <./CASPT2021paper_fig/disturbed MSA trajectories.png> <./CASPT2021paper_fig/disturbed equal trajectories.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[24 <./experiments/experiment 1ï¼šaffected bus dwell events of line 1.png> <./experiments/experiment 2ï¼šaffected bus dwell events of line 1.png> <./experiments/experiment 1ï¼šaffected bus dwell events of line 2.png> <./experiments/experiment 2ï¼šaffected bus dwell events of line 2.png>]
+
+LaTeX Warning: Reference `equ:sumLambda' on page 25 undefined on input line 1106.
+
+
+LaTeX Warning: Reference `equ:lambda' on page 25 undefined on input line 1110.
+
+
+LaTeX Warning: Reference `fig:disturbed mu=0' on page 25 undefined on input line 1113.
+
+
+LaTeX Warning: Reference `fig:disturbed mu=5' on page 25 undefined on input line 1113.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/effect of transfer parameter 0.png' not found on input line 1121.
+
+<CASPT2021paper_fig/effect of transfer parameter 0.png, id=132, 1448.91313pt x 1205.00188pt>
+File: CASPT2021paper_fig/effect of transfer parameter 0.png Graphic file (type png)
+ <use CASPT2021paper_fig/effect of transfer parameter 0.png>
+Package pdftex.def Info: CASPT2021paper_fig/effect of transfer parameter 0.png used on input line 1121.
+(pdftex.def)             Requested size: 152.09897pt x 126.48296pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/effect of transfer parameter 5.png' not found on input line 1122.
+
+<CASPT2021paper_fig/effect of transfer parameter 5.png, id=133, 1426.83063pt x 1206.00563pt>
+File: CASPT2021paper_fig/effect of transfer parameter 5.png Graphic file (type png)
+ <use CASPT2021paper_fig/effect of transfer parameter 5.png>
+Package pdftex.def Info: CASPT2021paper_fig/effect of transfer parameter 5.png used on input line 1122.
+(pdftex.def)             Requested size: 152.09897pt x 128.55734pt.
+
+Overfull \hbox (168.35645pt too wide) in paragraph at lines 1120--1124
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `example specifications' on page 25 undefined on input line 1132.
+
+
+LaTeX Warning: Reference `fig:disturbed cap=150' on page 25 undefined on input line 1133.
+
+
+LaTeX Warning: Reference `fig:disturbed cap=80' on page 25 undefined on input line 1133.
+
+
+LaTeX Warning: Reference `barB' on page 25 undefined on input line 1137.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/effect of capacity 100.png' not found on input line 1142.
+
+<CASPT2021paper_fig/effect of capacity 100.png, id=134, 1427.83438pt x 1185.42876pt>
+File: CASPT2021paper_fig/effect of capacity 100.png Graphic file (type png)
+ <use CASPT2021paper_fig/effect of capacity 100.png>
+Package pdftex.def Info: CASPT2021paper_fig/effect of capacity 100.png used on input line 1142.
+(pdftex.def)             Requested size: 152.09897pt x 126.27345pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/effect of capacity 70.png' not found on input line 1143.
+
+<CASPT2021paper_fig/effect of capacity 70.png, id=135, 1426.83063pt x 1185.42876pt>
+File: CASPT2021paper_fig/effect of capacity 70.png Graphic file (type png)
+ <use CASPT2021paper_fig/effect of capacity 70.png>
+Package pdftex.def Info: CASPT2021paper_fig/effect of capacity 70.png used on input line 1143.
+(pdftex.def)             Requested size: 152.09897pt x 126.3639pt.
+
+Overfull \hbox (116.83722pt too wide) in paragraph at lines 1141--1145
+ [][] 
+ []
+
+[25 <./CASPT2021paper_fig/effect of transfer parameter 0.png> <./CASPT2021paper_fig/effect of transfer parameter 5.png>]
+
+LaTeX Warning: Reference `example' on page 26 undefined on input line 1164.
+
+
+Overfull \hbox (10.98029pt too wide) in paragraph at lines 1169--1193
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `tab: basic settings' on page 26 undefined on input line 1197.
+
+
+LaTeX Warning: Reference `fig:trans ana' on page 26 undefined on input line 1198.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[26 <./CASPT2021paper_fig/effect of capacity 100.png> <./CASPT2021paper_fig/effect of capacity 70.png>]
+
+LaTeX Warning: File `CASPT2021paper_fig/trans ana 1.png' not found on input line 1211.
+
+<CASPT2021paper_fig/trans ana 1.png, id=147, 884.80562pt x 667.99562pt>
+File: CASPT2021paper_fig/trans ana 1.png Graphic file (type png)
+ <use CASPT2021paper_fig/trans ana 1.png>
+Package pdftex.def Info: CASPT2021paper_fig/trans ana 1.png used on input line 1211.
+(pdftex.def)             Requested size: 152.09897pt x 114.82166pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/trans ana 2.png' not found on input line 1212.
+
+<CASPT2021paper_fig/trans ana 2.png, id=148, 874.76813pt x 672.01062pt>
+File: CASPT2021paper_fig/trans ana 2.png Graphic file (type png)
+ <use CASPT2021paper_fig/trans ana 2.png>
+Package pdftex.def Info: CASPT2021paper_fig/trans ana 2.png used on input line 1212.
+(pdftex.def)             Requested size: 152.09897pt x 116.84482pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/trans ana 3.png' not found on input line 1213.
+
+<CASPT2021paper_fig/trans ana 3.png, id=149, 879.78688pt x 676.02562pt>
+File: CASPT2021paper_fig/trans ana 3.png Graphic file (type png)
+ <use CASPT2021paper_fig/trans ana 3.png>
+Package pdftex.def Info: CASPT2021paper_fig/trans ana 3.png used on input line 1213.
+(pdftex.def)             Requested size: 152.09897pt x 116.87242pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/trans ana 4.png' not found on input line 1214.
+
+<CASPT2021paper_fig/trans ana 4.png, id=150, 884.80562pt x 667.99562pt>
+File: CASPT2021paper_fig/trans ana 4.png Graphic file (type png)
+ <use CASPT2021paper_fig/trans ana 4.png>
+Package pdftex.def Info: CASPT2021paper_fig/trans ana 4.png used on input line 1214.
+(pdftex.def)             Requested size: 152.09897pt x 114.82166pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/trans ana 5.png' not found on input line 1215.
+
+<CASPT2021paper_fig/trans ana 5.png, id=151, 864.73062pt x 663.98062pt>
+File: CASPT2021paper_fig/trans ana 5.png Graphic file (type png)
+ <use CASPT2021paper_fig/trans ana 5.png>
+Package pdftex.def Info: CASPT2021paper_fig/trans ana 5.png used on input line 1215.
+(pdftex.def)             Requested size: 152.09897pt x 116.78596pt.
+
+Overfull \hbox (57.60574pt too wide) in paragraph at lines 1209--1217
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+
+LaTeX Warning: Reference `tab: basic settings' on page 28 undefined on input line 1222.
+
+
+LaTeX Warning: Reference `fig:cap ana' on page 28 undefined on input line 1223.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[28 <./CASPT2021paper_fig/trans ana 1.png> <./CASPT2021paper_fig/trans ana 2.png> <./CASPT2021paper_fig/trans ana 3.png> <./CASPT2021paper_fig/trans ana 4.png> <./CASPT2021paper_fig/trans ana 5.png>]
+
+LaTeX Warning: File `CASPT2021paper_fig/cap ana 1.png' not found on input line 1236.
+
+<CASPT2021paper_fig/cap ana 1.png, id=163, 894.84312pt x 672.01062pt>
+File: CASPT2021paper_fig/cap ana 1.png Graphic file (type png)
+ <use CASPT2021paper_fig/cap ana 1.png>
+Package pdftex.def Info: CASPT2021paper_fig/cap ana 1.png used on input line 1236.
+(pdftex.def)             Requested size: 152.09897pt x 114.21977pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/cap ana 2.png' not found on input line 1237.
+
+<CASPT2021paper_fig/cap ana 2.png, id=164, 873.76437pt x 655.95062pt>
+File: CASPT2021paper_fig/cap ana 2.png Graphic file (type png)
+ <use CASPT2021paper_fig/cap ana 2.png>
+Package pdftex.def Info: CASPT2021paper_fig/cap ana 2.png used on input line 1237.
+(pdftex.def)             Requested size: 152.09897pt x 114.18253pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/cap ana 3.png' not found on input line 1238.
+
+<CASPT2021paper_fig/cap ana 3.png, id=165, 873.76437pt x 655.95062pt>
+File: CASPT2021paper_fig/cap ana 3.png Graphic file (type png)
+ <use CASPT2021paper_fig/cap ana 3.png>
+Package pdftex.def Info: CASPT2021paper_fig/cap ana 3.png used on input line 1238.
+(pdftex.def)             Requested size: 152.09897pt x 114.18253pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/cap ana 4.png' not found on input line 1239.
+
+<CASPT2021paper_fig/cap ana 4.png, id=166, 874.76813pt x 658.96187pt>
+File: CASPT2021paper_fig/cap ana 4.png Graphic file (type png)
+ <use CASPT2021paper_fig/cap ana 4.png>
+Package pdftex.def Info: CASPT2021paper_fig/cap ana 4.png used on input line 1239.
+(pdftex.def)             Requested size: 152.09897pt x 114.57599pt.
+
+
+LaTeX Warning: File `CASPT2021paper_fig/cap ana 5.png' not found on input line 1240.
+
+<CASPT2021paper_fig/cap ana 5.png, id=167, 859.71187pt x 660.96938pt>
+File: CASPT2021paper_fig/cap ana 5.png Graphic file (type png)
+ <use CASPT2021paper_fig/cap ana 5.png>
+Package pdftex.def Info: CASPT2021paper_fig/cap ana 5.png used on input line 1240.
+(pdftex.def)             Requested size: 152.09897pt x 116.93207pt.
+
+Overfull \hbox (57.60574pt too wide) in paragraph at lines 1235--1242
+ [][] 
+ []
+
+
+Overfull \hbox (7.63794pt too wide) in paragraph at lines 1247--1255
+[]\OT1/ptm/m/n/10 This study de-vel-ops a method-ol-ogy for in-ves-ti-gat-ing the bus bunch-ing phe-nomenon.
+ []
+
+[29 <./CASPT2021paper_fig/cap ana 1.png> <./CASPT2021paper_fig/cap ana 2.png> <./CASPT2021paper_fig/cap ana 3.png> <./CASPT2021paper_fig/cap ana 4.png> <./CASPT2021paper_fig/cap ana 5.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[30]
+
+LaTeX Warning: Reference `equ:equivalent condition' on page 31 undefined on input line 1367.
+
+No file main.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[31]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[32] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5578 strings out of 493333
+ 83175 string characters out of 3130143
+ 158692 words of memory out of 3000000
+ 8991 multiletter control sequences out of 15000+200000
+ 30661 words of font info for 69 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 45i,23n,52p,520b,783s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/phdji/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (32 pages, 6742833 bytes).
+PDF statistics:
+ 258 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+
